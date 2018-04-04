@@ -90,6 +90,7 @@ function saveDetails() {
 														.match(phoneNumberPattern)) {
 													document
 															.getElementById('phoneError').style.display = 'none';
+													window.location.replace("http://localhost:8080/webDesigningProject/projecthtml/home_project.html");
 												} else {
 													document
 															.getElementById('phoneError').style.display = 'block';
@@ -97,6 +98,7 @@ function saveDetails() {
 															.getElementById('phoneError').innerHTML = "Please enter valid phonenumber";
 												}
 											}
+											window.location.replace("http://localhost:8080/webDesigningProject/projecthtml/home_project.html");
 
 										}
 									}
@@ -192,6 +194,8 @@ function saveDetails() {
 									document.cookie = emailValue + pswValue + "="
 											+ pswValue + ";" + expires;
 
+									window.location.replace("http://localhost:8080/webDesigningProject/projecthtml/home_project.html");
+									
 									var phoneNumberPattern = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
 
 									if (document.signupForm.phoneNumberInput.value != "") {
@@ -204,6 +208,7 @@ function saveDetails() {
 										}
 									}
 
+									window.location.replace("http://localhost:8080/webDesigningProject/projecthtml/home_project.html");
 								} else {
 									document.getElementById('confirmError').style.display = 'block';
 
@@ -232,5 +237,14 @@ function saveDetails() {
 		}
 	}
 
+	
+}
+
+
+
+
+function cancel(){
+	window.location.replace("http://localhost:8080/webDesigningProject/projecthtml/home_project.html");
+	
 	
 }
