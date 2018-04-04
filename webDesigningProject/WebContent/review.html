@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="css/reviews.css">
+   <link rel="stylesheet" href="css/themes/bars-movie.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="js/jquery.barrating.js"></script>
+   <script src="js/reviews.js"></script>
+   <title>Reviews & Ratings</title>
+</head>
+<body>
+   <header>
+      <div class="main-content">
+         <h1>Hotel Page</h1>
+      </div>
+   </header>
+   <nav>
+      <div class="main-content">
+         <ul>
+            <li><a href="">About Us</a>
+               <ul>
+                  <li><a href="">Amenities</a></li>
+                  <li><a href="">Rooms</a></li>
+               </ul>
+            </li>
+            <li><a href="">Location</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Booking</a></li>
+         </ul>
+      </div>
+   </nav>
+   <main>
+      <div class="main-content">
+      <section>
+         <form>
+            <fieldset id="form-review">
+               <legend>How was your stay?</legend>
+                  <div class="form-review">
+                     <div class="form-review-items">
+                        <label for="form-review-name">Name:</label>
+                        <input id="form-review-name"type="text"><span id="form-alert-name" class="form-review-alert"></span><br>
+                     </div>
+                     <div class="form-review-items">
+                        <label for="form-review-email">Email:</label>
+                        <input id="form-review-email"type="text"><span id="form-alert-email" class="form-review-alert"></span><br>
+                     </div>
+                  </div>
+                  <div class="form-review-items">
+                     <label for="form-review-location">Location</label>
+                     <select name="form-review-location" id="form-review-location">
+                        <option value="Bad">Bad</option>
+                        <option value="Mediocre">Mediocre</option>
+                        <option value="Good" selected="selected">Good</option>
+                        <option value="Awesome">Awesome</option>
+                        <option value="Incredible">Incredible</option>
+                     </select>
+                  </div>
+                  <div class="form-review-items">
+                     <label for="form-review-clean">Cleanliness</label>
+                     <select name="form-review-clean" id="form-review-clean">
+                        <option value="Bad">Bad</option>
+                        <option value="Mediocre">Mediocre</option>
+                        <option value="Good" selected="selected">Good</option>
+                        <option value="Awesome">Awesome</option>
+                        <option value="Incredible">Incredible</option>
+                     </select>
+                  </div>
+                  <div class="form-review-items">
+                     <label for="form-review-value">Value</label>
+                     <select name="form-review-value" id="form-review-value">
+                        <option value="Bad">Bad</option>
+                        <option value="Mediocre">Mediocre</option>
+                        <option value="Good" selected="selected">Good</option>
+                        <option value="Awesome">Awesome</option>
+                        <option value="Incredible">Incredible</option>
+                     </select>
+                  </div>
+                  <div class="form-review-items">
+                     <label for="form-review-checkin">Check-in</label>
+                     <select name="form-review-checkin" id="form-review-checkin">
+                        <option value="Bad">Bad</option>
+                        <option value="Mediocre">Mediocre</option>
+                        <option value="Good" selected="selected">Good</option>
+                        <option value="Awesome">Awesome</option>
+                        <option value="Incredible">Incredible</option>
+                     </select>
+                  </div>
+                  <div class="form-review-items">
+                     <label for="form-review-ameneties">Ameneties</label>
+                     <select name="form-review-ameneties" id="form-review-ameneties">
+                        <option value="Bad">Bad</option>
+                        <option value="Mediocre">Mediocre</option>
+                        <option value="Good" selected="selected">Good</option>
+                        <option value="Awesome">Awesome</option>
+                        <option value="Incredible">Incredible</option>
+                     </select>
+                  </div>
+                  <div class="form-review-items">
+                     <label for="form-review-wifi">Wi-fi</label>
+                     <select name="form-review-wifi" id="form-review-wifi">
+                        <option value="Bad">Bad</option>
+                        <option value="Mediocre">Mediocre</option>
+                        <option value="Good" selected="selected">Good</option>
+                        <option value="Awesome">Awesome</option>
+                        <option value="Incredible">Incredible</option>
+                     </select>
+                  </div>
+                  <div class="form-review-items">
+                     <label for="">Tell us about your stay</label><br>
+                     <textarea name="form-review-comments" id="form-review-comments" cols="65" rows="8" maxlength="1500" placeholder="Whether it was amazing or not so good, your experience helps other travelers make their choice"></textarea>
+                  </div>
+                  <div class="form-review-items">
+                     <input type="button" name="btn-review-submit" id="btn-review-submit" value="Submit">
+                  </div>
+            </fieldset>
+         </form>
+      </section>
+      </div>
+   </main>
+   <footer>
+      <div class="main-content">
+         <p>Copyright © 2018 Hello Hotel. All rights reserved.</p>
+      </div>
+   </footer>
+</body>
+</html>
