@@ -196,8 +196,9 @@
 }
 #rlogo
 {
-    height: 40px;
-    width: 50px;
-    margin-left: 600px;
-    margin-top: -165px;
+    height: 80px;
+    width: 115px;
+    margin-left: 1078px;
+    margin-top: -123px;
+    border-radius: 10px;
 }
