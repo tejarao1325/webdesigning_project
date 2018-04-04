@@ -1,0 +1,203 @@
+#foot
+{
+    height: 300px;
+    width: 100%;
+    opacity: 1;
+    background: url(../images/v.jpg);
+}
+#e1
+{
+
+    opacity: .7;
+    width: 100%;
+    height: 80px;
+}
+#available
+{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    margin-left: 500px;
+    margin-top: 3px;
+}
+#seven
+{
+    margin-left: 620px;
+    margin-top: -39px;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+
+}
+#a1
+{
+    height: 200px;
+    width: 300px;
+    margin-left: 20px;
+}
+#address
+{
+    color: white;
+    font-size: 20px;
+    margin-left: 8px;
+}
+#email1
+{
+    background: black;
+    margin-left:  7px;
+    margin-top: -1px;
+}
+#mailmail
+{
+    color:white;
+    margin-left: 45px;
+    margin-top: -30px;
+}
+#navinavi
+{
+    margin-top: 50px;
+    margin-left: 7px;
+}
+#address2
+{
+    color: white;
+    font-size: 20px;
+    margin-left: 45px;
+    margin-top: -25px;
+}
+
+#a2
+{  
+    border-radius: 10px;
+    height: 100px;
+    width: 300px;
+    margin-left: 350px;
+    margin-top: -119px;
+}
+#dial
+{
+    margin-left: -322px;
+    margin-top: 1px;
+}
+/*#call{
+      color: white;
+      font-size: 20px;
+ margin-left: 30px;   
+}*/
+#call2
+{
+    color: white;
+    font-size: 20px;
+    margin-left: -280px;
+    margin-top: -20px;
+}
+#a3
+{
+    height: 150px;
+    width: 250px;
+    margin-left: 350px;
+    margin-top: -200px;
+}
+#mail
+{
+    color: white;
+    font-size: 20px;
+    margin-left: 31px;   
+}
+#tweet
+{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 10px;
+}
+#face
+{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 10px;
+}
+#in
+{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 10px;
+}
+
+#insta
+{
+    width: 41px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 10px;
+}
+#wiki
+{
+    width: 41px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 10px;
+
+}
+#googleplus
+{
+    width: 41px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 10px;
+
+}
+#a4
+{
+    height: 150px;
+    width: 300px;
+    margin-left: 680px;
+    margin-top: -171px;
+}
+#social
+{
+    color: white;
+    font-size: 20px;
+    margin-left: 30px; 
+}
+#mail2
+{
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;   
+}
+#em
+{
+    margin-left: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+#b22
+{
+    height: 30px;
+    width: 40px;
+}
+#rlogo
+{
+    height: 40px;
+    width: 50px;
+    margin-left: 600px;
+    margin-top: -165px;
+}

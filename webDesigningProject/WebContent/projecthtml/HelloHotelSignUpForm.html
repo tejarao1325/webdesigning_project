@@ -3,13 +3,27 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/signup.css">
+<link rel="stylesheet" href="css/footercss.css">
+<link rel="stylesheet" href="css/headercss.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <script src="js/signup.js"></script>
 
-<!-- onclick ="saveDetails()"  validateDetails()-->
+<div id="header"></div>
+        <script src="https://code.jquery.com/jquery-1.10.2.js">
+            
+        </script>
+        
+        
+        <script>
+            $(function()
+            {
+                $("#header").load("headerproject.html");
+            }      
+            );
+            </script>
 <form name="signupForm">
   
   
@@ -60,6 +74,16 @@
     
 
 </form>
+
+<div id="footer"></div>
+
+<script>
+$(function()
+{
+    $("#footer").load("footer_project.html");
+}      
+);
+</script>
 
 </body>
 </html>
