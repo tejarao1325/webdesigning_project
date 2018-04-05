@@ -1,0 +1,165 @@
+html {
+   box-sizing: border-box;
+   height: 100%;
+   font-family: sans-serif;
+}
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+body {
+   margin: 0;
+   height: 100%;
+   background-color: #FFF;
+}
+
+header {
+   width: 100%;
+   padding: 1em 0;
+   background-color: #F8F8F8;
+}
+nav {
+   width: 100%;
+   padding: 1em 0;
+   background-color: #F8F8F8;
+}
+nav li {
+   text-decoration: none;
+   list-style: none;
+}
+.main-content {
+   margin: 0 auto;
+   width: 85%;
+   height: 100%;
+}
+fieldset#form-review {
+   margin: 25px 0;
+   border: none;
+}
+fieldset#form-review>legend {
+   font-size: 1.2em;
+}
+.form-review-items {
+   position: relative;
+   /* display: inline-block; */
+   margin: 10px 0;
+}
+#btn-review-submit {
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   background-color: #666;
+   color: #FFF;
+   font-size: 1.25em;
+}
+footer {
+   width: 100%;
+   padding: 1em 0;
+   background-color: #F8F8F8;
+   font-size: 0.8em;
+}
+
+/* Boxes */
+.box {
+  width: 100%;
+  float: left;
+  margin: 1em 0;
+}
+.box .box-header {
+  text-align: center;
+  font-weight: 400;
+  padding: .5em 0;
+}
+.box .box-body {
+  padding-top: 0.25em;
+  height: 65px;
+  /* rating widgets will be absolutely centered relative to box body */
+  position: relative;
+}
+.box select {
+  width: 120px;
+  margin: 10px auto 0 auto;
+  display: block;
+  font-size: 16px;
+}
+.box-large .box-body {
+  padding-top: 2em;
+  height: 120px;
+}
+.box-orange .box-header {
+  background-color: #edb867;
+  color: white;
+}
+.box-orange .box-body {
+  background-color: white;
+  border: 2px solid #f5d8ab;
+  border-top: 0;
+}
+.box-green .box-header {
+  background-color: #50e3c2;
+  color: white;
+}
+.box-green .box-body {
+  background-color: white;
+  border: 2px solid #92eed9;
+  border-top: 0;
+}
+.box-blue .box-header {
+  background-color: #4278f5;
+  color: white;
+}
+.box-blue .box-body {
+  background-color: white;
+  border: 2px solid #8bacf9;
+  border-top: 0;
+}
+.box-example-movie .br-wrapper {
+  width: 250px;
+  position: absolute;
+  margin: 0px 0 0 -125px;
+  left: 50%;
+}
+
+.form-review {
+   position: relative;
+   display: inline-block;
+}
+
+.form-review .form-review-alert {
+   font-size: 0.85em;
+   visibility: hidden;
+   min-width: 200px;
+   background-color: #FFA500;
+   color: #fff;
+   text-align: center;
+   border-radius: 3px;
+   padding: 3px 0;
+
+   /* Position the tooltip */
+   position: absolute;
+   z-index: 1;
+   top: -5px;
+   left: 102%;
+}
+.form-review .form-review-alert::after {
+   content: " ";
+   position: absolute;
+   top: 50%;
+   right: 100%; /* To the left of the tooltip */
+   margin-top: -6px;
+   border-width: 6px;
+   border-style: solid;
+   border-color: transparent #FFA500 transparent transparent;
+}
+
+.display {
+   visibility: visible !important;
+}
+
+#form-alert-name {
+   top: 0px;
+}
+
+#form-alert-email {
+   top: 0.1px;
+}
