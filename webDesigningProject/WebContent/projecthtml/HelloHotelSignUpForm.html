@@ -8,8 +8,13 @@
 <body>
 
 <script src="js/signup.js"></script>
-
-<div id="header"></div>
+<div id="title" >
+<img src="../projecthtml/images/hhh.jpg" alt="hotel logo" id="hotelLogo2">
+            <h3 id="hotelTitle">HELLO HOTEL</h3>
+            </div>
+<div id="header">
+  
+     </div>
         <script src="https://code.jquery.com/jquery-1.10.2.js">
             
         </script>
@@ -31,31 +36,31 @@
     
     <div class="required">
     <label id ="name" for="name"><b>FIRST NAME:</b></label>
-    <input id ="nameInput" type="text" placeholder="Enter your First Name" name="name" >
+    <input id ="nameInput" type="text" placeholder="Enter your First Name" name="name" onclick="validateFirstName()">
      <span id="nameError"></span><br>
      </div>
      
       <div class="unrequired">
     <label id ="lastname" for="lastName"><b>LAST NAME:</b></label>
-    <input id ="lastnameInput" type="text" placeholder="Enter your Last Name" name="lastName" >
+    <input id ="lastnameInput" type="text" placeholder="Enter your Last Name" name="lastName" onclick="validateLastName()" >
      <span id="lastNameError"></span><br>
      </div>
      
      <div class="required">
     <label id ="email" for="email"><b>EMAIL:</b></label>
-    <input id ="emailInput" type="email" placeholder="Enter Email" name="email" >
+    <input id ="emailInput" type="email" placeholder="Enter Email" name="email" onclick="validateEmail()" >
     <span id="emailerror" ></span><br>
     </div>
     
      <div class="required">
     <label id ="password" for="psw"><b>PASSWORD:</b></label>
-    <input id ="passwordInput" type="password" placeholder="Enter Password" name="psword" >
+    <input id ="passwordInput" type="password" placeholder="Enter Password" name="psword" onclick="validatePassword()" >
      <span id="passwordError" ></span><br>
   </div>
      
      <div class="required">
       <label id ="confirmpassword" for="psw"><b> CONFIRM PASSWORD:</b></label>
-    <input  id ="confirmpasswordInput" type="password" placeholder="Enter Password" name="cpsword" >
+    <input  id ="confirmpasswordInput" type="password" placeholder="Enter Password" name="cpsword" onclick="validateConfirmPswd()" >
      <span id="confirmError"></span><br>
     </div>
     

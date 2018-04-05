@@ -1,5 +1,6 @@
-#signUp {font-family: Arial, Helvetica, sans-serif;
+body {font-family: Arial, Helvetica, sans-serif;
 /*  background-image: url("../images/booking.jpg"); */
+background-color:#c1c4c9;
  background-repeat: none;
 }
 
@@ -150,3 +151,31 @@ margin-left:900px;
 display:none;
 }
 
+#black{
+	display:none;
+}
+
+#title{
+	height: 60px;
+    width: 100%;
+    background:snow;
+
+}
+
+
+#hotelTitle{
+	
+	color:black;
+margin-left:600px;
+font-size: xx-large;
+margin-top:-50px;
+text-shadow: 2px 2px 5px red;
+}
+
+#hotelLogo2
+{
+    height: 60px;
+    width: 70px;
+    background: snow;
+    margin-left: 500px;
+}
