@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>SIGN UP</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/signup.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<script src="js/signup.js"></script>
-<div id="title" >
-<img src="../projecthtml/images/hhh.jpg" alt="hotel logo" id="hotelLogo2">
-            <h3 id="hotelTitle">HELLO HOTEL</h3>
-            </div>
-<div id="header">
-  
-     </div>
-        <script src="https://code.jquery.com/jquery-1.10.2.js">
-            
-        </script>
-        
-        
-        <script>
-            $(function()
-            {
-                $("#header").load("headerproject.html");
-            }      
-            );
-            </script>
-            
-            <main id="signUp">
+<script src="js/signup.js">
+</script>
+
+	<div id="title">
+		<img src="../projecthtml/images/hhh.jpg" alt="hotel logo"
+			id="hotelLogo2">
+		<h3 id="hotelTitle">HELLO HOTEL</h3>
+	</div>
+	<div id="header"></div>
+	<script src="https://code.jquery.com/jquery-1.10.2.js">
+		
+	</script>
+
+
+	<script>
+		$(function() {
+			$("#header").load("headerproject.html");
+		});
+	</script>
+
+	<main id="signUp">
 <form name="signupForm">
   
   
@@ -73,22 +73,17 @@
     <button id ="signupButton" type="button" onclick ="saveDetails()">SIGN UP</button><br>
     <button id ="cancelButton" type="button" onclick ="cancel()">CANCEL</button><br><br>
 
-  
-    
-
 </form>
 
 </main>
 
-<div id="footer"></div>
+	<div id="footer"></div>
 
-<script>
-$(function()
-{
-    $("#footer").load("footer_project.html");
-}      
-);
-</script>
+	<script>
+		$(function() {
+			$("#footer").load("footer_project.html");
+		});
+	</script>
 
 </body>
 </html>

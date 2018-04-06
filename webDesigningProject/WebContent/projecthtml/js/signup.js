@@ -495,3 +495,115 @@ function validateConfirmPswd(){
 			}
 		}
 }
+
+
+
+
+
+function validatePhonenumber(){
+	
+	var phoneNumberPattern = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+
+	if (document.signupForm.phoneNumberInput.value != "") {
+		if (document.signupForm.phoneNumberInput.value
+				.match(phoneNumberPattern)) {
+			document
+					.getElementById('phoneError').style.display = 'none';
+			
+			if (document.signupForm.confirmpasswordInput.value == "") {
+
+				document.getElementById('confirmError').style.display = 'block';
+				document.getElementById('confirmError').innerHTML = "Re-enter the password";
+				if (document.signupForm.passwordInput.value == "") {
+					document.getElementById('passwordError').style.display = 'block';
+					document.getElementById('passwordError').innerHTML = "Password is Mandatory";
+				}else{
+					document.getElementById('passwordError').style.display = 'none';
+				}
+
+			} else if (document.signupForm.confirmpasswordInput.value != "") {
+
+				if (document.signupForm.confirmpasswordInput.value == document.signupForm.passwordInput.value) {
+
+					document.getElementById('passwordError').style.display = 'none';
+					document.getElementById('confirmError').style.display = 'none';
+				}else{
+					document.getElementById('confirmError').style.display = 'block';
+					document.getElementById('confirmError').innerHTML = "Password is not matching";
+					if (document.signupForm.passwordInput.value == "") {
+						document.getElementById('passwordError').style.display = 'block';
+						document.getElementById('passwordError').innerHTML = "Password is Mandatory";
+					}else{
+						document.getElementById('passwordError').style.display = 'none';
+					}
+					}
+				}
+		} else {
+			document
+					.getElementById('phoneError').style.display = 'block';
+			document
+					.getElementById('phoneError').innerHTML = "Please enter valid phonenumber";
+			if (document.signupForm.confirmpasswordInput.value == "") {
+
+				document.getElementById('confirmError').style.display = 'block';
+				document.getElementById('confirmError').innerHTML = "Re-enter the password";
+				if (document.signupForm.passwordInput.value == "") {
+					document.getElementById('passwordError').style.display = 'block';
+					document.getElementById('passwordError').innerHTML = "Password is Mandatory";
+				}else{
+					document.getElementById('passwordError').style.display = 'none';
+				}
+
+			} else if (document.signupForm.confirmpasswordInput.value != "") {
+
+				if (document.signupForm.confirmpasswordInput.value == document.signupForm.passwordInput.value) {
+
+					document.getElementById('passwordError').style.display = 'none';
+					document.getElementById('confirmError').style.display = 'none';
+				}else{
+					document.getElementById('confirmError').style.display = 'block';
+					document.getElementById('confirmError').innerHTML = "Password is not matching";
+					if (document.signupForm.passwordInput.value == "") {
+						document.getElementById('passwordError').style.display = 'block';
+						document.getElementById('passwordError').innerHTML = "Password is Mandatory";
+					}else{
+						document.getElementById('passwordError').style.display = 'none';
+					}
+					}
+				}
+		}
+	}else{
+		
+		
+		if (document.signupForm.confirmpasswordInput.value == "") {
+
+			document.getElementById('confirmError').style.display = 'block';
+			document.getElementById('confirmError').innerHTML = "Re-enter the password";
+			if (document.signupForm.passwordInput.value == "") {
+				document.getElementById('passwordError').style.display = 'block';
+				document.getElementById('passwordError').innerHTML = "Password is Mandatory";
+			}else{
+				document.getElementById('passwordError').style.display = 'none';
+			}
+
+		} else if (document.signupForm.confirmpasswordInput.value != "") {
+
+			if (document.signupForm.confirmpasswordInput.value == document.signupForm.passwordInput.value) {
+
+				document.getElementById('passwordError').style.display = 'none';
+				document.getElementById('confirmError').style.display = 'none';
+			}else{
+				document.getElementById('confirmError').style.display = 'block';
+				document.getElementById('confirmError').innerHTML = "Password is not matching";
+				if (document.signupForm.passwordInput.value == "") {
+					document.getElementById('passwordError').style.display = 'block';
+					document.getElementById('passwordError').innerHTML = "Password is Mandatory";
+				}else{
+					document.getElementById('passwordError').style.display = 'none';
+				}
+				}
+			}
+	}
+
+	
+}
