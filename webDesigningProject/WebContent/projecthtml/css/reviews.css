@@ -32,6 +32,18 @@ nav li {
    width: 85%;
    height: 100%;
 }
+.navigation-content div {
+   width: 750px;
+   margin: 0 auto;
+}
+.navigation-content iframe {
+   display: block;
+   margin: 0 auto;
+}
+.navigation-content p {
+   text-align: justify;
+}
+
 fieldset#form-review {
    margin: 25px 0;
    border: none;
