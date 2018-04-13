@@ -43,6 +43,14 @@ nav li {
 .navigation-content p {
    text-align: justify;
 }
+.link-feat {
+   display: inline-block;
+   margin: 10px 0 0 0;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 0.75em;
+   color: #E34E40;
+}
 
 fieldset#form-review {
    margin: 25px 0;
@@ -174,4 +182,32 @@ footer {
 
 #form-alert-email {
    top: 0.1px;
+}
+/* FONT CLASSES */
+.font-normal {
+   font-weight: normal;
+}
+.font-bold {
+   font-weight: bold;
+}
+.font-caps {
+   text-transform: uppercase;
+}
+.font-smaller {
+   font-size: 0.6em;
+}
+.font-small {
+   font-size: 0.8em;
+}
+.font-medium {
+   font-size: 1.0em;
+}
+.font-large {
+   font-size: 1.2em;
+}
+.font-xlarge {
+   font-size: 1.4em;
+}
+.font-2xlarge {
+   font-size: 1.6em;
 }
