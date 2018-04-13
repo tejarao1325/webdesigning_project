@@ -214,3 +214,16 @@ footer {
 .font-margin {
    margin: 5px 0;
 }
+/* MARGIN */
+.margin-top {
+   margin-top: 50px;
+}
+.no-margin-top {
+   margin-top: 0;
+}
+.margin-bottom {
+   margin-bottom: 50px;
+}
+.no-margin-bottom {
+   margin-bottom: 0;
+}
