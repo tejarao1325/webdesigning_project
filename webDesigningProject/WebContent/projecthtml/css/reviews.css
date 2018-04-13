@@ -211,3 +211,6 @@ footer {
 .font-2xlarge {
    font-size: 1.6em;
 }
+.font-margin {
+   margin: 5px 0;
+}
