@@ -1,0 +1,58 @@
+# webdesigning_project
+Hello Hotel Webdesigning project
+
+
+SAITEJA THANDRA
+
+*Signup Page
+*validating all mandatory and non mandatory fields when onclick of that individual field and error will be displayed 
+*validating all fields of the signup page on click of submit button and error will be displayed.
+*on successfull signup, using javascript two cookies will be created with email and password
+*To validate the password for login page(phase 2) i have created cookie name as combination of email&password and value will be password
+and another cookie with value and name as user provided email.
+* if the user is signing up with same email it will show an error that email is already in use and u cannot signup.
+*on successfull signup user will be redirected to home page.
+*on click of cancel button user will be redirected to login page.
+
+FILES
+*HelloHotelSignupForm.htm;
+*signup.css
+*signup.js
+
+BERNARDO
+*Review and Rating Page
+*Validating the email.
+*appending the rating on hover.
+
+FILES
+*review.html
+*review.css
+*review.js
+*jquery.barrating.js
+
+
+
+
+ABHISHEIK
+*HomePage
+*Header
+*Footer
+*LOGIN and REGISTER button
+*Hotel Logo
+
+FILES
+*home_project.html
+*headerproject.html
+*footer_project.html
+*footercss.css
+*headercss.css
+
+CHAITALI
+
+*Contact us page
+
+Files
+*contact-us(2).html
+*contactus.css
+
+

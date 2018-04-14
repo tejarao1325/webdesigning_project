@@ -52,6 +52,24 @@
     margin-left: 1000px;
     margin-top: -66px;
 }
+
+#signOut{
+	
+	 height: 50px;
+    width: 250px;
+    background: snow;
+    margin-left: 1000px;
+    margin-top: -66px;
+}
+
+#username{
+	text-transform: uppercase;
+	 height: 50px;
+    width: 250px;
+    background: snow;
+    margin-left: 1080px;
+    margin-top: -50px;
+}
 #login
 {
     margin-left: 10px;

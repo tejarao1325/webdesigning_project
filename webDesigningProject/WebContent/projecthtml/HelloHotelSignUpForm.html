@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/signup.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -29,6 +30,17 @@
 	</script>
 
 	<main id="signUp">
+	
+	<div id="otherButtons">
+	
+	<button id ="signinButton"   type="button" onclick ="saveDetails()">  Already a user?? Sign IN</button><br>
+	
+	<button id ="facebookButton" class="fa fa-facebook" type="button" onclick ="saveDetails()">  SIGNUP USING FACEBOOK</button><br>
+	
+	<button id ="googlebutton"  class="fa fa-google" type="button" onclick ="saveDetails()">  SIGNUP USING GOOGLE</button><br>
+	</div>
+	
+	
 <form name="signupForm">
   
   
@@ -72,8 +84,13 @@
    
     <button id ="signupButton" type="button" onclick ="saveDetails()">SIGN UP</button><br>
     <button id ="cancelButton" type="button" onclick ="cancel()">CANCEL</button><br><br>
+    
+    
 
 </form>
+
+
+
 
 </main>
 

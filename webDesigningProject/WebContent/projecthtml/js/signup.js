@@ -82,14 +82,28 @@ function saveDetails() {
 											emailValue = escape(document.signupForm.email.value);
 
 											pswValue = escape(document.signupForm.passwordInput.value);
-
+											
+											name = escape(document.signupForm.nameInput.value);
+											
+											var firstname = getCookie("active");
+											
 											document.cookie = emailValue + "="
 													+ emailValue + ";"
 													+ expires;
 
-											document.cookie = emailValue
-													+ pswValue + "=" + pswValue
+											document.cookie = "active" + "=" + name
 													+ ";" + expires;
+											
+											document.cookie = emailValue + pswValue + "="
+											+ pswValue + ";"
+											+ expires;
+											
+											document.cookie = emailValue + pswValue+"active"+ "=" + name
+											+ ";" + expires;
+											
+
+											document.cookie = emailValue+"active"+ "=" + name
+											+ ";" + expires;
 
 											var phoneNumberPattern = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
 
@@ -208,12 +222,26 @@ function saveDetails() {
 									emailValue = escape(document.signupForm.email.value);
 
 									pswValue = escape(document.signupForm.passwordInput.value);
+									
+									name = escape(document.signupForm.nameInput.value);
+									
+									var firstname = getCookie("active");
 
+									
 									document.cookie = emailValue + "="
 											+ emailValue + ";" + expires;
 
 									document.cookie = emailValue + pswValue
 											+ "=" + pswValue + ";" + expires;
+									
+									document.cookie = "active"+ "=" + name
+									+ ";" + expires;
+									
+									document.cookie = emailValue + pswValue+"active"+ "=" + name
+									+ ";" + expires;
+									
+									document.cookie = emailValue+"active"+ "=" + name
+									+ ";" + expires;
 
 									window.location
 											.replace("http://localhost:8080/webDesigningProject/projecthtml/home_project.html");
