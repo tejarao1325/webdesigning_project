@@ -8,7 +8,8 @@ window.onload = function() {
 
 	 var name =getCookie("active");
 	 if(name!=""){
-		 
+		 document.getElementById('signOut').style.display = 'block';
+		 document.getElementById('signout').style.display = 'block';
 		 document.getElementById('logsign').style.display = 'none';
 		 document
 			.getElementById('username').innerHTML = name;

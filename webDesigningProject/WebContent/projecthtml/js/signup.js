@@ -635,3 +635,13 @@ function validatePhonenumber(){
 
 	
 }
+
+
+
+function redirectToLogin(){
+	
+	window.location
+	.replace("http://localhost:8080/webDesigningProject/projecthtml/HelloHotelLoginForm.html");
+
+	
+}

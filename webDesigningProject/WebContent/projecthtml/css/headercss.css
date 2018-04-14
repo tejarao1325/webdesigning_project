@@ -190,3 +190,12 @@
     top: 34px;
     width: 109px;
 }
+
+#signOutBtn{
+	
+	display: none;
+}
+
+#signout{
+	display: none;
+}
