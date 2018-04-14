@@ -1,0 +1,799 @@
+html
+{
+    font-family: 'Philosopher', sans-serif;
+
+    background: snow ;
+}
+#black
+{
+    height: 60px;
+    width: 100%;
+    background:snow;
+}
+#hotelLogo
+{
+    height: 60px;
+    width: 70px;
+    background: snow;
+}
+#clock
+{
+    margin-left: 50px;
+    margin-top: -38px;
+}
+#booktime
+{
+    margin-top: -38px;
+    margin-left: 200px;
+    font-size: 15px; 
+    color: black;
+}
+#dialer
+{
+ margin-left: 425px;
+    margin-top: -54px;
+}
+#callus
+{
+    margin-top: -53px;
+    margin-left: 450px;
+    font-size: 15px; 
+    
+}
+#blackmail
+{
+    margin-left: 678px;
+    margin-top: -54px;
+}
+#maile
+{
+    margin-top: -52px;
+    margin-left: 710px;
+    font-size: 15px; 
+    
+}
+#logsign
+{
+    height: 50px;
+    width: 250px;
+    background: snow;
+    margin-left: 1000px;
+    margin-top: -66px;
+}
+#login
+{
+    margin-left: 10px;
+    margin-top: 9px;
+}
+#loginbtn
+{
+    height: 30px;
+    width: 70px;
+    background: greenyellow;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    opacity: 0.6;
+    transition: 0.3s;
+
+}
+#loginbtn:hover
+{
+    opacity: 1;
+}
+#register
+{
+    margin-left: 15px;
+    
+}
+#regbtn
+{
+    height: 30px;
+    width: 70px;
+    background: greenyellow;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    opacity: 0.6;
+    transition: 0.3s;
+
+}
+#regbtn:hover
+{
+    opacity: 1;
+}
+#nav,#nav ul 
+{
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#nav 
+{
+ 
+    color: #2b2b2b;
+    text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+    font-size: 13px;
+    height: 36px;
+    list-style: none outside none;
+    margin: 1px auto;
+    text-shadow: 0 -1px 3px #202020;
+    width: 67.6%;
+
+    /*border radius*/
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+     border-radius: 4px;
+
+    /*box shadow*/
+    -moz-box-shadow: 0px 3px 3px #cecece;
+    -webkit-box-shadow: 0px 3px 3px #cecece;
+    box-shadow: 0 3px 4px #8b8b8b;
+
+    /*gradient*/
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #787878), 
+    color-stop(0.5, #5E5E5E), color-stop(0.51, #707070), color-stop(1, #838383));
+    background-color: #9AF0FF;
+}
+#nav li
+{
+    border-bottom: 1px solid #575757;
+    border-left: 1px solid #929292;
+    border-right: 1px solid #5d5d5d;
+    border-top: 1px solid #797979;
+    display: block;
+    float: left;
+    height: 34px;
+    position: relative;
+    width: 110px;
+}
+#nav > li:first-child 
+{
+    border-left: 0 none;
+    margin-left: 5px;
+}
+#nav ul 
+{
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+    z-index: 2;
+}
+#nav ul li 
+{
+    background: none repeat scroll 0 0 #838383;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+#nav li a
+{
+    color: #FFFFFF;
+    display: block;
+    line-height: 34px;
+    outline: medium none;
+    text-align: center;
+    text-decoration: none;
+
+    /* gradient */
+    background-image: -webkit-gradient(linear, left bottom, left top, 
+    color-stop(0, #787878), color-stop(0.5, #5E5E5E), color-stop(0.51, #707070), color-stop(1, #838383));
+    background-image: -moz-linear-gradient(center bottom, #787878 0%, #5E5E5E 50%, #707070 51%, #838383 100%);
+    background-color: #5f5f5f;
+}
+
+#nav li:hover ul 
+{
+    left: 0;
+    top: 34px;
+    width: 109px;
+}
+#main1
+{
+    height: 400px;
+    width: 1330px;
+    background: black;
+    margin-top: 40px;
+}
+#goodService 
+{
+  color: #202020;
+  text-shadow: 1px 1px 0px , 4px 4px 0px rgba(0,0,0,0.15);
+  margin-left: 200px;
+}
+#book, #book1
+{
+  color: #202020;
+  text-shadow: 1px 1px 0px , 4px 4px 0px rgba(0,0,0,0.15);
+  margin-left: 200px;
+  margin-top: 40px;
+}   
+.button 
+{
+    color: #202020;
+    text-shadow: 1px 1px 0px , 4px 4px 0px rgba(0,0,0,0.15);
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.b1 
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    
+    margin-left: 200px;
+}
+
+.b1:hover 
+{
+    background-color: #4CAF50;
+    color: white;
+}
+.b2
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    margin-left: 300px;
+    margin-right: 40px;
+}
+
+.b2:hover
+{
+    background-color: #008CBA;
+    color: white;
+}
+#rate
+{
+      color: #202020;
+      text-shadow: 1px 1px 0px , 4px 4px 0px rgba(0,0,0,0.15);
+      margin-left: 100px;
+      margin-top:2px;
+}
+#pic
+{
+    margin-left: 600px;
+    margin-top:-99px;    
+}
+#room
+{
+      color: #202020;
+      font-size: 25px;
+      text-shadow: 1px 1px 0px , 4px 4px 0px rgba(0,0,0,0.15);
+      margin-left: 70px;
+}
+#checkin
+{
+    border: 1px solid greenyellow;
+    
+}
+#co
+{
+    margin-left: 200px;
+    margin-top: -63px;
+}
+#checkout
+{
+    margin-left: 200px;
+    margin-top: -63px;
+}
+#room1
+{
+    margin-left: 440px;
+    margin-top: -63px;
+}
+#room2
+{
+    margin-left: 440px;
+    margin-top: -90px;
+}
+.b3
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    margin-left: 300px;
+    margin-right: 40px;
+}
+
+.b3:hover
+{
+    background-color: violet;
+    color: white;
+}
+#about
+{
+    margin-left: 520px;
+}
+#best
+{
+    margin-left: 350px;
+    margin-top: -40px;
+}
+.b4
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    margin-left: 590px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.b4:hover
+{
+    background-color: #929292;
+    color: white;
+}
+.pimg1
+{
+  margin-top: 30px;  
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.pimg1
+{
+  background-image:url(par.jpg);
+  min-height:100%;
+}
+#hospitality
+{
+    color: black;
+    margin-left: 510px;
+}
+#bestrates
+{
+    text-align:center;
+    font-size: 30px;
+    border-radius: 12px;
+    background:  black;
+    height: 250px;
+    width: 300px;
+    margin-left: 90px;
+    opacity: .7;
+    color:#FFFFFF;
+}
+#fantasticoffers
+{
+    text-align:center;
+    font-size: 30px;
+    border-radius: 12px;
+    background:  black;
+    height: 250px;
+    width: 300px;
+    margin-top:  -250px;
+    margin-left: 490px;
+    opacity: .7;
+    color:#FFFFFF;
+}
+
+#greatview
+{
+    text-align:center;
+    font-size: 30px;
+    border-radius: 12px;
+    background:  black;
+    height: 250px;
+    width: 300px;
+    margin-top:  -250px;
+    margin-left: 910px;
+    opacity: .7;
+    color:#FFFFFF;
+}
+#roomssuites
+{
+     
+      color: #202020;
+      font-size: 40px;
+      text-shadow: 1px 1px 0px , 4px 4px 0px rgba(0,0,0,0.15);
+      margin-left: 420px;
+}
+#r1
+{
+      color: #202020;
+      font-size: 20px;
+    text-align: center;
+    height: 55px;
+    width: 300px;
+    border-radius: 5px;
+    background: greenyellow;
+}
+#im2
+{
+      margin-left: 470px;
+      margin-top: -1500px;
+    
+}
+#r2
+{
+      color: #202020;
+      font-size: 20px;
+      margin-left: 470px;
+    text-align: center;
+    height: 55px;
+    width: 300px;
+    border-radius: 5px;
+    background: greenyellow;
+}
+#im3
+{
+      margin-left: 950px;
+      margin-top: -2000px;
+    
+}
+#r3
+{
+      color: #202020;
+      font-size: 20px;
+      margin-left: 950px;
+    text-align: center;
+    height: 55px;
+    width: 300px;
+    border-radius: 5px;
+    background: greenyellow;
+}
+#activity
+{
+      color: #202020;
+      font-size: 45px;
+      margin-left: 20px;
+      text-align: center;
+}
+#reception
+{
+      color: #202020;
+      
+    font-size: 25px;
+    margin-left: 50px;
+}
+#line1
+{
+    height: 500px;
+    width: .1px;
+    border: 1px solid black;
+    margin-left: 400px;
+    margin-top: -200px;
+}
+#wifi
+{
+      color: #202020;
+      margin-top: -482px;
+    font-size: 25px;
+    margin-left: 450px;
+}
+#line2
+{
+    height: 500px;
+    width: .1px;
+    border: 1px solid black;
+    margin-left: 800px;
+    margin-top: -200px;
+}
+#bar
+{
+      color: #202020;
+      margin-top: -482px;
+    font-size: 25px;
+    margin-left: 850px;
+}
+#hr
+{
+    width: 1300px;
+    border: 1px solid black;
+}
+#campfire
+{
+      color: #202020;
+      margin-top:   10px;
+    font-size: 25px;
+    margin-left: 50px;
+}
+#boattrip
+{
+      color: #202020;
+      margin-top: -180px;
+    font-size: 25px;
+    margin-left: 450px;
+}
+#roomservice
+{
+      color: #202020;
+      margin-top: -180px;
+    font-size: 25px;
+    margin-left: 850px;
+}
+#testimonials
+{
+      color: #202020;
+    margin-top: 200px;
+    font-size: 50px;
+    color: #00ff33;
+    margin-left: 500px;
+}
+#dq
+{
+    margin-left: 780px;
+    margin-top: -150px;
+}
+#happycustomer
+{
+ font: sans-serif;
+      color: #008CBA;
+    margin-top: 0px;
+    font-size: 30px;
+    margin-left: 490px;
+}
+#i1
+{
+    margin-left: 70px;
+    margin-top: -1px;
+}
+#bubble1
+{  margin-top: -150px;
+}
+.gcs
+{
+    position: absolute;
+      color: #202020;
+    margin-top: -80px;
+font-size: 25px;
+margin-left: 30px;
+}
+#bubble2
+{
+    margin-top: -250px;
+    margin-left: 150px;
+}
+.lovely
+{
+    position: absolute;
+      color: #202020;
+    margin-top: -140px;
+font-size: 22px;
+margin-left: 400px;
+}
+#i2
+{
+    margin-left: 370px;
+    margin-top: -20px;
+}
+#bubble3
+{
+    margin-top: -550px;
+    margin-left: 950px;
+}
+.again
+{
+    position: absolute;
+      color: #202020;
+    margin-top: -485px;
+font-size: 22px;
+margin-left: 1000px;
+}
+#i3
+{
+    margin-left: 870px;
+    margin-top: -350px;
+}
+#foot
+{
+    height: 300px;
+    width: 100%;
+    opacity: 1;
+    background: url(v.jpg);
+}
+#e1
+{
+    
+    opacity: .7;
+    width: 100%;
+    height: 80px;
+}
+#available
+{
+     position: absolute;
+      color: white;
+      font-size: 30px;
+      margin-left: 500px;
+      margin-top: 3px;
+}
+#seven{
+    margin-left: 620px;
+    margin-top: -39px;
+     position: absolute;
+      color: white;
+      font-size: 30px;
+    
+}
+#address
+{
+      color: white;
+      font-size: 20px;
+ margin-left: 8px;
+}
+#address2
+{
+      color: white;
+      font-size: 20px;
+ margin-left: 45px;
+ margin-top: -25px;
+}
+#a1{
+    height: 200px;
+    width: 300px;
+    margin-left: 20px;
+    
+}
+#mailmail
+{
+    color:white;
+    margin-left: 45px;
+    margin-top: -30px;
+}
+#email1
+{
+    background: black;
+    margin-left:  7px;
+    margin-top: -1px;
+}
+#navinavi
+{
+    margin-top: 50px;
+    margin-left: 7px;
+}
+#dial
+{
+    margin-left: -322px;
+    margin-top: 1px;
+}
+#a2{
+    
+    border-radius: 10px;
+    height: 100px;
+    width: 300px;
+    margin-left: 350px;
+    margin-top: -119px;
+}
+/*#call{
+      color: white;
+      font-size: 20px;
+ margin-left: 30px;   
+}*/
+#call2{
+      color: white;
+      font-size: 20px;
+ margin-left: -280px;
+ margin-top: -20px;
+}
+#a3{
+    
+    height: 150px;
+    width: 250px;
+    margin-left: 350px;
+    margin-top: -200px;
+}
+#tweet
+{
+        width: 40px;
+	height: 40px;
+        margin-left: 30px;
+        border: 2px solid white;
+	background: white;
+	border-radius: 10px;
+
+}
+#face
+{
+        width: 40px;
+	height: 40px;
+        margin-left: 30px;
+        border: 2px solid white;
+	background: white;
+	border-radius: 10px;
+
+}
+
+#in
+{
+        width: 40px;
+	height: 40px;
+        margin-left: 30px;
+        border: 2px solid white;
+	background: white;
+	border-radius: 10px;
+
+}
+#insta
+{
+        width: 41px;
+	height: 40px;
+        margin-left: 30px;
+        margin-top: 15px;
+        border: 2px solid white;
+	background: white;
+	border-radius: 10px;
+
+}
+#wiki
+{
+        width: 41px;
+	height: 40px;
+        margin-left: 30px;
+        margin-top: 15px;
+        border: 2px solid white;
+	background: white;
+	border-radius: 10px;
+
+}
+#googleplus
+{
+        width: 41px;
+	height: 40px;
+        margin-left: 30px;
+        margin-top: 15px;
+        border: 2px solid white;
+	background: white;
+	border-radius: 10px;
+
+}
+
+#mail{
+      color: white;
+      font-size: 20px;
+ margin-left: 31px;   
+}
+#mail2{
+      color: white;
+      font-size: 20px;
+ margin-left: 30px;   
+}
+#a4
+{
+    height: 150px;
+    width: 300px;
+    margin-left: 680px;
+    margin-top: -171px;
+}
+#em{
+    margin-left: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+#b22
+{
+    height: 30px;
+    width: 40px;
+}
+#social
+{
+      color: white;
+      font-size: 20px;
+ margin-left: 30px; 
+}
+#rlogo
+{
+    height: 140px;
+    width: 150px;
+    background: black;
+    border-radius: 40px;
+    border: 1px black;
+    margin-top: -165px;
+    margin-left: 1100px;
+}
+#video
+{
+    height: 400px;
+    width: 2000px;
+}
