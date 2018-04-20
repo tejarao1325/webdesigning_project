@@ -14,7 +14,7 @@ function getCookie(UserEmail) {
 	return "";
 }
 
-function checkCookie() {
+/*function checkCookie() {
 
 	var inputOfemail = document.loginForm.email.value;
 	var inputOfPassword = document.loginForm.psw.value;
@@ -27,7 +27,7 @@ function checkCookie() {
 	if (password != "") {
 		alert("Welcome again your password is " + passowrd);
 	}
-}
+}*/
 
 function validateDetails() {
 

@@ -8,7 +8,10 @@
 
 </head>
 <body>
-
+ <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
 <script src="js/signup.js">
 </script>
 
@@ -36,7 +39,7 @@
 	
 	<button id ="facebookButton" class="fa fa-facebook" type="button" onclick ="redirectToFacebook()">  SIGNUP WITH FACEBOOK</button><br>
 	
-	<button id ="googlebutton"  class="fa fa-google" type="button" onclick ="redirectToGoogle()">  SIGNUP WITH GOOGLE</button><br>
+	<button id ="googlebutton"  class="fa fa-google" type="button" onclick ="handleSignInClick()">  SIGNUP WITH GOOGLE</button><br>
 	
 	<button id ="signinButton"  class="fa fa-user"  type="button" onclick ="redirectToLogin()">  ALREADY A USER?</button>
 	

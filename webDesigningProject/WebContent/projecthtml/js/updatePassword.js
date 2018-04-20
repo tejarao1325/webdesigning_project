@@ -37,7 +37,6 @@ function validatepassword() {
 		document.getElementById('passwordError').innerHTML = "Please enter new password";
 
 		if (document.PassWordForm.email.value == "") {
-			document.getElementById('passwordError').style.display = 'none';
 			document.getElementById('emailerror').style.display = 'block';
 			document.getElementById('emailerror').innerHTML = "Email is Mandatory";
 
@@ -180,18 +179,30 @@ function getCookie(UserEmail) {
 
 
 
+
+var span = document.getElementsByClassName("close")[0];
+
+
+//When the user clicks on <span> (x), close the modal
+ function close() {
+ modal.style.display = "none";
+}
+
+
+
+
+
 function updatePassword(){
 	
 	if(validateEmail() && validatepassword() && confirmPassword()){
 		document.getElementById('changePassword').style.display = 'none';
 		
-		document.getElementById('message').innerHTML = "Your Password has been Updated!! You can login with your new password";
-		
-		document.getElementById('loginButton').style.display = 'block';
 
+		var modal = document.getElementById('myModal');
+		var passwordForm =document.getElementById('changePassword');
+		passwordForm.style.display="block";
+		modal.style.display = "block";
 	}
-	
-	
 }
 
 
@@ -199,7 +210,6 @@ function updatePassword(){
 function login(){
 	window.location
 	.replace("http://localhost:8080/webDesigningProject/projecthtml/HelloHotelLoginForm.html");
-	
 	
 	
 }

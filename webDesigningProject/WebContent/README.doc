@@ -1,58 +1,59 @@
 # webdesigning_project
 Hello Hotel Webdesigning project
 
+PHASE 2:
 
 SAITEJA THANDRA
 
-*Signup Page
-*validating all mandatory and non mandatory fields when onclick of that individual field and error will be displayed 
-*validating all fields of the signup page on click of submit button and error will be displayed.
-*on successfull signup, using javascript two cookies will be created with email and password
-*To validate the password for login page(phase 2) i have created cookie name as combination of email&password and value will be password
-and another cookie with value and name as user provided email.
-* if the user is signing up with same email it will show an error that email is already in use and u cannot signup.
-*on successfull signup user will be redirected to home page.
-*on click of cancel button user will be redirected to login page.
+LOGIN PAGE
+
+*validating email and password
+*Validating email already registered with hello hotel
+*allows login only user enter exact password while he has given using registration.
+*On Login disabling login & Register page and enabling only Signout button and printing the name of the customer which he has 
+given while registering.
+*On click of signout button user will be logged out. will enable login and register buttons.
+
+
+Forgot Password Page.
+
+*allows to change the password for only registered emails.
+*password and confirm password should be same.
+*user will be able to login with using new password.
+
 
 FILES
-*HelloHotelSignupForm.htm;
-*signup.css
-*signup.js
+HelloHotelLoginForm.html
+HelloHotelForgotPassword.html
+login.js
+updatePassword.js
+login.css
+forgotpassword.css
+
+
 
 BERNARDO
-*Review and Rating Page
-*Validating the email.
-*appending the rating on hover.
+
+NAVIGATION PAGE
+
+*Integrated google maps
 
 FILES
-*review.html
-*review.css
-*review.js
-*jquery.barrating.js
+navigation.html
+content-loadup.js
 
 
 
 
-ABHISHEIK
-*HomePage
-*Header
-*Footer
-*LOGIN and REGISTER button
-*Hotel Logo
+ABHISHEK
+
+HOME PAGE
+
+HOME page is completed
+*Images are displayed using javascript.
+
 
 FILES
-*home_project.html
-*headerproject.html
-*footer_project.html
-*footercss.css
-*headercss.css
-
-CHAITALI
-
-*Contact us page
-
-Files
-*contact-us(2).html
-*contactus.css
-
-
+Changebackground.js
+home_project.html
+home_1.css
