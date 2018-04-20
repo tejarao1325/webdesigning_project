@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://lumen.hotelchamp.com/relay.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head>
+
+<body style="background-color:transparent;">
+<script>
+(function() {
+	function encodeData(data) {
+		if (window.encodeURIComponent) {
+			return window.encodeURIComponent(data);
+		}
+		return escape(data);
+	}
+
+	function decodeData(data) {
+		if (window.decodeURIComponent) {
+			return window.decodeURIComponent(data);
+		}
+		return unescape(data);
+	}
+
+	function loadCookie() {
+		var cookies = document.cookie.split(';'),
+			i = cookies.length,
+			v = null;
+
+		while (i) {
+			var cookie = cookies[--i];
+			while (cookie.charAt(0) === ' ') {
+				cookie = cookie.substring(1);
+			}
+			if (cookie.indexOf('hotelchamp=') === 0) {
+				v = cookie.substring('hotelchamp='.length, cookie.length);
+				break;
+			}
+		}
+		return v ? decodeData(v) : '{}';
+	}
+
+	function loadLocalStorage() {
+		return window.localStorage.getItem('hotelchamp') || '{}';
+	}
+
+	function saveCookie(data) {
+        try {
+            var value = encodeData(JSON.stringify(data));
+            createCookie('hotelchamp', value, 182);
+        } catch(e) {
+            !!console && console.log('[hc] Something went wrong while saving cookie');
+        }
+	};
+
+    function createCookie(name, value, days) {
+    	if (days) {
+    		var date = new Date();
+    		date.setTime(date.getTime() + (days*24*60*60*1000));
+    		var expires = "; expires=" + date.toGMTString();
+    	}
+    	else {
+            var expires = '';
+        }
+    	document.cookie = name + '=' + value + expires + '; path=/';
+    }
+
+    function readCookie(name) {
+    	var nameEQ = name + "=";
+    	var ca = document.cookie.split(';');
+    	for(var i=0;i < ca.length;i++) {
+    		var c = ca[i];
+    		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+    		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    	}
+    	return null;
+    }
+
+    function eraseCookie(name) {
+    	createCookie(name, '', -1);
+    }
+
+	function saveLocalStorage(data) {
+		try {
+			window.localStorage.setItem('hotelchamp', JSON.stringify(data));
+		} catch (error) {
+			// todo: handle serialisation error...
+		}
+	};
+
+	function send(url, callback, postData) {
+		var xmlHttpRequest 	= null,
+			constructors = [
+				function() { return new XMLHttpRequest(); },
+				function() { return new ActiveXObject('Microsoft.XMLHTTP'); }
+			];
+
+		for (var i = 0; i < constructors.length; i++) {
+			try {
+				xmlHttpRequest = constructors[i]();
+				break;
+			} catch (error) {
+				xmlHttpRequest = null;
+			}
+		}
+		if (!xmlHttpRequest) {
+			return;
+		}
+
+		xmlHttpRequest.open(postData ? 'POST' : 'GET', url, true);
+		if (postData) {
+			xmlHttpRequest.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+		}
+		xmlHttpRequest.onreadystatechange = function () {
+			if (xmlHttpRequest.readyState != 4) {
+				return;
+			}
+			if ((xmlHttpRequest.status != 200) && (xmlHttpRequest.status != 304)) {
+				return;
+			}
+			callback(xmlHttpRequest);
+		};
+		if (xmlHttpRequest.readyState == 4) {
+			return;
+		}
+
+		xmlHttpRequest.send(postData);
+	};
+
+    function canUseLocalStorage() {
+        var canUse = true;
+
+        if (!('localStorage' in window) || !window.localStorage.setItem) {
+            canUse = false;
+        }
+
+        if (canUse) {
+            try {
+                var d = new Date(),
+                    key = '__HC_STORAGE_TEST__',
+                    val = d.getTime();
+
+                window.localStorage.setItem(key, val);
+
+                if (window.localStorage.getItem(key) != val) {
+                    // incognito session, quota exceeded
+                    throw new Error('Storage not useable');
+                }
+            } catch(e) {
+                canUse = false;
+            }
+        }
+
+        return canUse;
+    };
+    
+    function canUseCookieStorage() {
+        var canUse = true;
+
+        if (!('cookie' in document)) {
+            canUse = false;
+        }
+
+        if (canUse) {
+            try {
+                var d = new Date(),
+                    key = '__HC_STORAGE_TEST__',
+                    val = d.getTime();
+
+                createCookie(key, val, 1);
+
+                if (parseInt(readCookie(key), 10) !== val) {
+                    // incognito session, quota exceeded
+                    throw new Error('Cookie not useable');
+                }
+            } catch(e) {
+                canUse = false;
+            }
+        }
+
+        return canUse;
+    };
+
+	var data = canUseLocalStorage() ? loadLocalStorage() : loadCookie();
+	
+	var hasPersistingStorage = canUseLocalStorage() || canUseCookieStorage();
+
+	try {
+		data = JSON.parse(data);
+	} catch (error) {
+		data = {};
+	}
+	
+	window.parent.postMessage({ixnrtaResponse: true, storage: data, hasPersistingStorage: hasPersistingStorage }, '*');
+
+	window.addEventListener(
+		'message',
+		function(event) {
+			var data = event.data,
+			    isValidDataObject = (data !== null && typeof data === 'object'),
+                	    localEnabled = canUseLocalStorage();
+			
+			if (isValidDataObject) {
+				if ('url' in data) {
+					console.log('Send message:', data.url, 'Post data:', data.postData);
+					send(
+						data.url || 'http://127.0.0.1:3000/test',
+						function(xmlHttpRequest) {
+							var result = null;
+							try {
+								result = JSON.parse(xmlHttpRequest.responseText);
+							} catch (error) {
+								result = xmlHttpRequest.responseText;
+							}
+							if (result !== null) {
+								result.ixnrtaResponse = true;
+								window.parent.postMessage(result, '*');
+							}
+						},
+						event.data.postData
+					);
+				} else if ('store' in data) {
+					localEnabled ? saveLocalStorage(data.store) : saveCookie(data.store);
+				} else if ('clear' in data) {
+					console.log('Clearing storage...');
+					localEnabled ? saveLocalStorage({}) : saveCookie({});
+				}
+			}
+		}
+	);
+})();
+</script>
+
+
+
+</body></html>

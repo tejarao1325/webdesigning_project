@@ -60,3 +60,7 @@ function validadeEmail() {
       return nameValid = true;
    }
 }
+// AMENETIES
+$(document).ready(function() {
+     $("#tabs").tabs();
+});
