@@ -1,0 +1,1244 @@
+html
+{
+    font-family: 'Philosopher', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+
+    background: snow ;
+}
+#black
+{
+    height: 60px;
+    width: 100%;
+    background:snow;
+}
+#hellohotel1
+{
+    height: 40px;
+    width: 60px;
+    background: green;
+}
+#hotelLogo
+{
+    height: 60px;
+    width: 70px;
+    background: snow;
+}
+#clock
+{
+    margin-left: 50px;
+    margin-top: -38px;
+}
+#booktime
+{
+    margin-top: -38px;
+    margin-left: 200px;
+    font-size: 15px; 
+    color: black;
+}
+#dialer
+{
+ margin-left: 425px;
+    margin-top: -54px;
+}
+#callus
+{
+    margin-top: -53px;
+    margin-left: 450px;
+    font-size: 15px; 
+    
+}
+#blackmail
+{
+    margin-left: 678px;
+    margin-top: -54px;
+}
+#maile
+{
+    margin-top: -52px;
+    margin-left: 710px;
+    font-size: 15px; 
+    
+}
+#logsign
+{
+    height: 50px;
+    width: 250px;
+    background: snow;
+    margin-left: 1000px;
+    margin-top: -66px;
+}
+#login
+{
+    margin-left: 10px;
+    margin-top: 9px;
+}
+#loginbtn
+{
+    height: 30px;
+    width: 70px;
+    background: greenyellow;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    opacity: 0.6;
+    transition: 0.3s;
+
+}
+#loginbtn:hover
+{
+    opacity: 1;
+}
+#register
+{
+    margin-left: 15px;
+    
+}
+#regbtn
+{
+    height: 30px;
+    width: 70px;
+    background: greenyellow;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    opacity: 0.6;
+    transition: 0.3s;
+
+}
+#regbtn:hover
+{
+    opacity: 1;
+}
+#nav,#nav ul 
+{
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#nav 
+{
+ 
+    color: #2b2b2b;
+    font-size: 13px;
+    height: 36px;
+    margin: 1px auto;
+    width: 67.6%;
+  
+
+    /*border radius*/
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+     border-radius: 4px;
+
+    /*box shadow*/
+    -moz-box-shadow: 0px 3px 3px #cecece;
+    -webkit-box-shadow: 0px 3px 3px #cecece;
+    box-shadow: 0 3px 4px #8b8b8b;
+
+    /*gradient*/
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #787878), 
+    color-stop(0.5, #5E5E5E), color-stop(0.51, #707070), color-stop(1, #838383));
+    background-color: #9AF0FF;
+}
+#nav li
+{
+    border-bottom: 1px solid #575757;
+    border-left: 1px solid #929292;
+    border-right: 1px solid #5d5d5d;
+    border-top: 1px solid #797979;
+    display: block;
+    float: left;
+    height: 34px;
+    position: relative;
+    width: 110px;
+}
+#nav > li:first-child 
+{
+    border-left: 0 none;
+    margin-left: 5px;
+}
+#nav ul 
+{
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+    z-index: 2;
+}
+#nav ul li 
+{
+    background: none repeat scroll 0 0 #838383;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+#nav li a
+{
+    color: #FFFFFF;
+    display: block;
+    line-height: 34px;
+    outline: medium none;
+    text-align: center;
+    text-decoration: none;
+
+    /* gradient */
+    background-image: -webkit-gradient(linear, left bottom, left top, 
+    color-stop(0, #787878), color-stop(0.5, #5E5E5E), color-stop(0.51, #707070), color-stop(1, #838383));
+    background-image: -moz-linear-gradient(center bottom, #787878 0%, #5E5E5E 50%, #707070 51%, #838383 100%);
+    background-color: #5f5f5f;
+}
+
+#nav li:hover ul 
+{
+    left: 0;
+    top: 34px;
+    width: 109px;
+}
+#main1
+{
+    height: 400px;
+    width: 619px;
+    background: whitesmoke;
+    margin-top: 40px;
+}
+#goodService 
+{
+  font-family: 'Philosopher', sans-serif;
+  color: black;
+  margin-left: 20px;
+  font-size: 25px;
+  margin-top: -380px;
+}
+#book, #book1
+{
+    
+  font-size: 25px;
+    font-family: 'Philosopher', sans-serif;
+  color: black;
+  margin-left: 20px;
+  margin-top: 40px;
+}   
+.button 
+{
+    color: #202020;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.b1 
+{
+    font-family: 'Philosopher', sans-serif;
+    background-color: white; 
+    color: black; 
+    border: 1px solid #4CAF50;
+    margin-left: 20px;
+    margin-top:50px;
+}
+
+.b1:hover 
+{
+    background-color: #4CAF50;
+    color: white;
+}
+.b2
+{
+    
+    font-family: 'Philosopher', sans-serif;
+    background-color: white; 
+    color: black; 
+    border: 1px solid #008CBA;
+    margin-left: 300px;
+    margin-top: -62px;
+    margin-right: 40px;
+}
+
+.b2:hover
+{
+    background-color: #008CBA;
+    color: white;
+}
+#rate
+{
+     font-family: 'Philosopher', sans-serif;
+   
+  font-size: 25px;
+      color: black;
+      margin-left: 300px;
+      margin-top:52px;
+}
+#pic
+{
+    margin-left: 600px;
+    margin-top:-80px;    
+}
+#room
+{
+    
+     font-family: 'Philosopher', sans-serif;
+   
+      color: black;
+      font-size: 25px;
+      margin-left: 200px;
+}
+#ci
+{
+    font-family: 'Philosopher', sans-serif;
+     margin-left: 50px;
+}
+#checkin
+{
+    border: 1px solid black;
+    height: 40px;
+    width: 180px;
+    border-radius: 5px;
+}
+#co
+{font-family: 'Philosopher', sans-serif;
+    
+    margin-left: 255px;
+    margin-top: -88px;
+}
+#checkout
+{
+    border: 1px solid black;
+    height: 40px;
+    width: 180px;
+    border-radius: 5px;
+
+    margin-left: 211px;
+    margin-top: 0px;
+}
+#room1
+{
+    font-family: 'Philosopher', sans-serif;
+    
+    margin-left: 440px;
+    margin-top: -85px;
+}
+#adult
+{
+ font-family: 'Philosopher', sans-serif;
+    
+    margin-left: 564px;
+    margin-top: -85px;
+   
+}
+#adult1
+{
+    
+
+    border: 1px solid black;
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+
+    margin-left: 573px;
+    margin-top: -2px;
+    
+}
+#children
+{
+font-family: 'Philosopher', sans-serif;
+    
+    margin-left: 692px;
+    margin-top: -84px;
+     
+}
+#children1
+{
+    
+
+    border: 1px solid black;
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+
+    margin-left: 713px;
+    margin-top: -4px;
+    
+}
+#room2
+{
+    margin-left: 440px;
+    margin-top: -3px;
+     border: 1px solid black;
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+
+}
+.b3
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    margin-top: -50px;
+    margin-left: 1000px;
+}
+
+.b3:hover
+{
+    background-color: cyan;
+    color: white;
+}
+#about
+{
+    margin-left: 520px;
+}
+#best
+{
+    font-size: 25px;
+      color: black;
+        
+    margin-left: 520px;
+    margin-top: 50px;
+    font-family: 'Philosopher', sans-serif;
+
+}
+.b4
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    margin-left: 590px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.b4:hover
+{
+    background-color: #929292;
+    color: white;
+}
+.pimg1
+{
+  margin-top: 30px;  
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.pimg1
+{
+  background-image:url(par.jpg);
+  min-height:100%;
+}
+#hospitality
+{
+     font-size: 25px;
+      color: black;
+      
+    color: black;
+    margin-left: 550px;
+}
+#bestrates
+{
+      font-family: 'Philosopher', sans-serif;
+  
+    text-align:center;
+    border-radius: 12px;
+    background:  black;
+    height: 200px;
+    width: 300px;
+    margin-left: 90px;
+    opacity: .7;
+    color:#FFFFFF;
+       font-size: 25px;
+  
+}
+#fantasticoffers
+{
+    font-family: 'Philosopher', sans-serif;
+  
+    text-align:center;
+    font-size: 25px;
+    border-radius: 12px;
+    background:  black;
+    height: 200px;
+    width: 300px;
+    margin-top:  -200px;
+    margin-left: 490px;
+    opacity: .7;
+    color:#FFFFFF;
+}
+
+#greatview
+{
+    font-family: 'Philosopher', sans-serif;
+  
+    text-align:center;
+    font-size: 25px;
+    border-radius: 12px;
+    background:  black;
+    height: 200px;
+    width: 300px;
+    margin-top:  -200px;
+    margin-left: 910px;
+    opacity: .7;
+    color:#FFFFFF;
+}
+#greatfood
+{
+    font-family: 'Philosopher', sans-serif;
+  
+    text-align:center;
+    font-size: 25px;
+    border-radius: 12px;
+    background:  black;
+    height: 200px;
+    width: 300px;
+    margin-top:  120px;
+    margin-left: 90px;
+    opacity: .7;
+    color:#FFFFFF;
+}
+#events
+{
+    font-family: 'Philosopher', sans-serif;
+  
+    text-align:center;
+    font-size: 25px;
+    border-radius: 12px;
+    background:  black;
+    height: 200px;
+    width: 300px;
+    margin-top:  -200px;
+    margin-left: 490px;
+    opacity: .8;
+    color:#FFFFFF;
+}
+
+#crew
+{
+    font-family: 'Philosopher', sans-serif;
+  
+    text-align:center;
+    font-size: 25px;
+    border-radius: 12px;
+    background:  black;
+    height: 200px;
+    width: 300px;
+    margin-top:  -200px;
+    margin-left: 910px;
+    opacity: .8;
+    color:#FFFFFF;
+}
+
+
+
+#roomssuites
+{
+font-family: 'Philosopher', sans-serif;
+       
+      color: #202020;
+      font-size: 30px;
+      margin-left: 420px;
+}
+#r1
+{
+      color: #202020;
+      font-size: 20px;
+    text-align: center;
+    height: 55px;
+    width: 300px;
+    margin-left: 40px;
+    
+    border-radius: 5px;
+    background: greenyellow;
+}
+#im2
+{
+      margin-left: 470px;
+      margin-top: -1500px;
+    
+}
+#r2
+{
+      color: #202020;
+      font-size: 20px;
+      margin-left: 470px;
+    text-align: center;
+    height: 55px;
+    width: 300px;
+    border-radius: 5px;
+    background: greenyellow;
+}
+#im3
+{
+      margin-left: 950px;
+      margin-top: -2000px;
+    
+}
+#r3
+{
+      color: #202020;
+      font-size: 20px;
+      margin-left: 950px;
+    text-align: center;
+    height: 55px;
+    width: 300px;
+    border-radius: 5px;
+    background: greenyellow;
+}
+#activity
+{
+    font-family: 'Philosopher', sans-serif;
+  
+      color: #202020;
+      font-size: 25px;
+      margin-left: 20px;
+      text-align: center;
+}
+#laptop
+{
+    height: 90px;
+    width: 80px;
+    margin-top: 10px;
+}
+#reception
+{
+    font-family: 'Philosopher', sans-serif;
+  
+      color: #202020;
+      
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: -60px;
+}
+#line1
+{
+    height: 400px;
+    width: .1px;
+    border: 1px solid black;
+    margin-left: 400px;
+    margin-top: -150px;
+}
+#imgwifi
+{
+    margin-left: 420px;
+    
+    height: 50px;
+    width: 50px;
+    margin-top: -445px;
+}
+#wifi
+{font-family: 'Philosopher', sans-serif;
+  
+      color: #202020;
+      margin-top: -430px;
+    font-size: 20px;
+    margin-left: 490px;
+}
+#line2
+{
+    height: 400px;
+    width: .1px;
+    border: 1px solid black;
+    margin-left: 800px;
+    margin-top: -130px;
+}
+#mug
+{
+    height: 50px;
+    width: 50px;
+    margin-top: -440px;
+margin-left: 810px;
+    
+}
+#bar
+{
+    font-family: 'Philosopher', sans-serif;
+  
+      color: #202020;
+      margin-top: -425px;
+    font-size: 20px;
+    margin-left: 880px;
+}
+#hr
+{
+    width: 1300px;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+#imgcampfire
+{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+}
+#campfire
+{
+    font-family: 'Philosopher', sans-serif;
+  
+      color: #202020;
+      margin-top:-40px;
+    font-size: 20px;
+    margin-left: 70px;
+}
+#imgroom
+{
+    height: 50px;
+    width: 50px;
+    margin-left: 810px;
+    margin-top: -180px;
+}
+#imgboat
+{
+    height: 50px;
+    width: 50px;
+    margin-left: 420px;
+    margin-top: -170px;
+}
+#boattrip
+{
+      color: #202020;
+      margin-top: -155px;
+    font-size: 20px;
+    margin-left: 480px;
+}
+#roomservice
+{
+      color: #202020;
+      margin-top: -170px;
+    font-size: 20px;
+    margin-left: 880px;
+}
+
+#dq
+{
+    margin-left: 780px;
+    margin-top: -150px;
+}
+#foot
+{
+    height: 300px;
+    width: 100%;
+    opacity: 1;
+    background: url(v.jpg);
+}
+#e1
+{
+    
+    opacity: .7;
+    width: 100%;
+    height: 80px;
+}
+#available
+{
+     position: absolute;
+      color: white;
+      font-size: 30px;
+      margin-left: 500px;
+      margin-top: 3px;
+}
+#seven{
+    margin-left: 620px;
+    margin-top: -39px;
+     position: absolute;
+      color: white;
+      font-size: 30px;
+    
+}
+#address
+{
+      color: white;
+      font-size: 20px;
+ margin-left: 8px;
+}
+#address2
+{
+      color: white;
+      font-size: 20px;
+ margin-left: 45px;
+ margin-top: -25px;
+}
+#a1{
+    height: 200px;
+    width: 300px;
+    margin-left: 20px;
+    
+}
+#mailmail
+{
+    color:white;
+    margin-left: 45px;
+    margin-top: -30px;
+}
+#email1
+{
+    background: black;
+    margin-left:  7px;
+    margin-top: -1px;
+}
+#navinavi
+{
+    margin-top: 50px;
+    margin-left: 7px;
+}
+#dial
+{
+    margin-left: -322px;
+    margin-top: 1px;
+}
+#a2{
+    
+    border-radius: 10px;
+    height: 100px;
+    width: 300px;
+    margin-left: 350px;
+    margin-top: -119px;
+}
+
+#call2{
+      color: white;
+      font-size: 20px;
+ margin-left: -280px;
+ margin-top: -20px;
+}
+#a3{
+    
+    height: 150px;
+    width: 250px;
+    margin-left: 350px;
+    margin-top: -200px;
+}
+#tweet
+{
+        width: 40px;
+	height: 40px;
+        margin-left: 30px;
+        border: 2px solid white;
+	background: white;
+	border-radius: 10px;
+
+}
+#face
+{
+        width: 40px;
+	height: 40px;
+        margin-left: 30px;
+        border: 2px solid white;
+	background: white;
+	border-radius: 10px;
+
+}
+
+#in
+{
+        width: 40px;
+	height: 40px;
+        margin-left: 30px;
+        border: 2px solid white;
+	background: white;
+	border-radius: 10px;
+
+}
+#insta
+{
+        width: 41px;
+	height: 40px;
+        margin-left: 30px;
+        margin-top: 15px;
+        border: 2px solid white;
+	background: white;
+	border-radius: 10px;
+
+}
+#wiki
+{
+        width: 41px;
+	height: 40px;
+        margin-left: 30px;
+        margin-top: 15px;
+        border: 2px solid white;
+	background: white;
+	border-radius: 10px;
+
+}
+#googleplus
+{
+        width: 41px;
+	height: 40px;
+        margin-left: 30px;
+        margin-top: 15px;
+        border: 2px solid white;
+	background: white;
+	border-radius: 10px;
+
+}
+
+#mail{
+      color: white;
+      font-size: 20px;
+ margin-left: 31px;   
+}
+#mail2{
+      color: white;
+      font-size: 20px;
+ margin-left: 30px;   
+}
+#a4
+{
+    height: 150px;
+    width: 300px;
+    margin-left: 680px;
+    margin-top: -171px;
+}
+#em{
+    margin-left: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+#b22
+{
+    height: 30px;
+    width: 40px;
+}
+#social
+{
+      color: white;
+      font-size: 20px;
+ margin-left: 30px; 
+}
+#rlogo
+{
+    height: 140px;
+    width: 150px;
+    background: black;
+    border-radius: 40px;
+    border: 1px black;
+    margin-top: -165px;
+    margin-left: 1100px;
+}
+#video
+{
+    height: 100%;
+    width: 800px;
+    margin-left: 575px;
+}
+#backgoundImage
+{
+    height: 200px;
+   width: 300px;
+}
+#jimage ul
+{
+    list-style-type: none;
+    padding-left:20px;
+    margin-left:100px;
+    
+    
+    
+}
+#jimage li
+{  list-style-type: none;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #9AF0FF;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: yellow;
+}
+#customer
+{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background: snow;
+}
+#timage ul
+{
+    list-style-type: none;
+    padding-left:20px;
+    margin-left:140px;
+    background: snow;
+    
+}
+#timage li
+{ 
+    list-style-type: none;
+    float: left;
+    margin-left: 90px;
+    margin-top: 10px;
+    background: snow;
+}
+#description
+{
+    
+    text-align: justify;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 25px;
+    margin-top: 1000px;
+    margin-left: 20px;
+    background: snow;
+}
+#block1
+{
+    height: 300px;
+    width: 45%;
+    border: 1px solid white;
+    background: snow;
+    margin-left: 20px;
+}
+#blueline1
+{
+    height: 300px;
+    width: 10px;
+    background: cyan;
+}
+#double1
+{
+    margin-top: -280px;
+    margin-left: 20px;
+}
+#review1
+{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+    margin-top: -265px;
+    margin-left: 38px;
+    text-align: justify;
+}
+#double2
+{
+    margin-top: -50px;
+    margin-left: 460px;
+}
+#kelly
+{
+    font-family: 'Philosopher', sans-serif;
+    
+    margin-left: 35px;
+}
+#block2
+{
+    height: 300px;
+    width: 45%;
+    border: 1px solid white;
+    background: snow;
+    margin-left: 700px;
+    margin-top: -300px;
+}
+#blueline2
+{
+    height: 300px;
+    width: 10px;
+    background: cyan;
+}
+#double3
+{
+    margin-top: -280px;
+    margin-left: 20px;
+}
+#review2
+{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+    margin-top: -265px;
+    margin-left: 38px;
+    text-align: justify;
+}
+#double4
+{
+    margin-top: -45px;
+    margin-left: 280px;
+}
+#santi
+{
+    font-family: 'Philosopher', sans-serif;
+    
+    margin-left: 40px;
+    margin-top: 40px;
+}
+#block3
+{
+    height: 300px;
+    width: 45%;
+    border: 1px solid white;
+    background: snow;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+#blueline3
+{
+    height: 300px;
+    width: 10px;
+    background: cyan;
+}
+#double5
+{
+    margin-top: -280px;
+    margin-left: 20px;
+}
+#review3
+{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+    margin-top: -265px;
+    margin-left: 38px;
+    text-align: justify;
+}
+#double6
+{
+    margin-top: -45px;
+    margin-left: 90px;
+}
+#martin
+{
+    font-family: 'Philosopher', sans-serif;
+    margin-top: 75px;
+    margin-left: 35px;
+}
+#block4
+{
+    height: 300px;
+    width: 45%;
+    border: 1px solid white;
+    background: snow;
+    margin-left: 700px;
+    margin-top: -300px;
+}
+#blueline4
+{
+    height: 300px;
+    width: 10px;
+    background: cyan;
+}
+#double7
+{
+    margin-top: -280px;
+    margin-left: 20px;
+}
+#review4
+{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+    margin-top: -270px;
+    margin-left: 40px;
+    text-align: justify;
+}
+#double8
+{
+    margin-top: -50px;
+    margin-left: 240px;
+}
+#martina
+{
+    font-family: 'Philosopher', sans-serif;
+    margin-top: 95px;
+    margin-left: 35px;
+}
+#block5
+{
+    height: 100px;
+    width: 45%;
+    border: 1px solid white;
+    background: snow;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+#blueline5
+{
+    height: 100px;
+    width: 10px;
+    background: cyan;
+}
+#double9
+{
+    margin-top: -80px;
+    margin-left: 20px;
+}
+#review5
+{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+    margin-top: -75px;
+    margin-left: 44px;
+    align: justify;
+}
+#double10
+{
+    margin-top: -50px;
+    margin-left: 515px;
+}
+#zubair
+{
+    font-family: 'Philosopher', sans-serif;
+    margin-top: 0px;
+    margin-left: 45px;
+}
+#block6
+{
+    height: 100px;
+    width: 45%;
+    border: 1px solid white;
+    background: snow;
+    margin-left: 700px;
+    margin-top: -100px;
+}
+#blueline6
+{
+    height: 100px;
+    width: 10px;
+    background: cyan;
+}
+#double11
+{
+    margin-top: -90px;
+    margin-left: 20px;
+}
+#review6
+{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+    margin-top: -85px;
+    margin-left: 44px;
+    text-align: justify;
+}
+
+#double12
+{
+    margin-top: -45px;
+    margin-left: 500px;
+}
+#nelson
+{
+    font-family: 'Philosopher', sans-serif;
+    margin-top: -12px;
+    margin-left: 45px;
+}
+#awards
+{
+    height: 300px;
+    width: 50%;
+    margin-left: 400px;
+}
