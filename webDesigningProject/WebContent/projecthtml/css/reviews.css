@@ -10,18 +10,18 @@ html {
 body {
    margin: 0;
    height: 100%;
-   background-color: #FFF;
+   background-color: #F8F8F8;
 }
 
 header {
    width: 100%;
    padding: 1em 0;
-   background-color: #F8F8F8;
+   background-color: #FFF;
 }
 nav {
    width: 100%;
    padding: 1em 0;
-   background-color: #F8F8F8;
+   background-color: #FFF;
 }
 nav li {
    text-decoration: none;
@@ -78,8 +78,58 @@ footer {
    background-color: #F8F8F8;
    font-size: 0.8em;
 }
+/*** *** *** *** *** *** *** *** *** *** *** *** *** *** ***/
+/* AMENETIES PAGE */
+/*** *** *** *** *** *** *** *** *** *** *** *** *** *** ***/
+.amenities-tabs{
+   text-align: center;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+.amenities-tabs li {
+   display: inline-block;
+   background-color: #FFF;
+   border: 2px solid #E34E40;
+   box-shadow: 0 0 0 2px #FFF;
+   border-radius: 5px;
+   padding: 0;
+   margin: 20px 5px;
+   transition: 0.3s;
+}
+.amenities-tabs li a {
+   display: block;
+   padding: 5px 0;
+   text-decoration: none;
+   border-radius: 5px;
+   color: #E34E40;
+   width: 100px;
+   text-align: center;
+}
 
+.amenities-tabs li:hover {
+   background-color: #E34E40;
+   border: 2px solid #FFF;
+   box-shadow: 0 0 0 2px #E34E40;
+   color: #FFF;
+   transition: 0.3s;
+}
+.amenities-tabs li a:hover {
+   color: #FFF;
+   transition: 0.3s;
+}
+.amenities-tabs li a:active {
+   border: 1px solid #666;
+   background-color: #666;
+   color: #FFF;
+}
+.margin-align-center {
+   display: block;
+   margin: 0 auto;
+}
+/*** *** *** *** *** *** *** *** *** *** *** *** *** *** ***/
 /* Boxes */
+/*** *** *** *** *** *** *** *** *** *** *** *** *** *** ***/
 .box {
   width: 100%;
   float: left;
@@ -213,6 +263,15 @@ footer {
 }
 .font-margin {
    margin: 5px 0;
+}
+.text-center {
+   text-align: center;
+}
+.line-high {
+   line-height: 1.45em;
+}
+.alt-color {
+   color: #E34E40;
 }
 /* MARGIN */
 .margin-top {
