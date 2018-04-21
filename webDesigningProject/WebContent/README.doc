@@ -1,59 +1,54 @@
 # webdesigning_project
 Hello Hotel Webdesigning project
 
-PHASE 2:
+PHASE 3:
 
 SAITEJA THANDRA
 
-LOGIN PAGE
+PAYMENT PAGE
 
-*validating email and password
-*Validating email already registered with hello hotel
-*allows login only user enter exact password while he has given using registration.
-*On Login disabling login & Register page and enabling only Signout button and printing the name of the customer which he has 
-given while registering.
-*On click of signout button user will be logged out. will enable login and register buttons.
-
-
-Forgot Password Page.
-
-*allows to change the password for only registered emails.
-*password and confirm password should be same.
-*user will be able to login with using new password.
+*Provided four different types of payments.
+*Onclick of each payment button respective form will be loaded
+* validating email and password for paypal payment
+*vallidating all fields such as cardnumber, cardname,cvv for debit and credit card.
 
 
 FILES
-HelloHotelLoginForm.html
-HelloHotelForgotPassword.html
-login.js
-updatePassword.js
-login.css
-forgotpassword.css
+HelloHotelPaymentPage.html
+payment.css
+payment.js
+
 
 
 
 BERNARDO
 
-NAVIGATION PAGE
+Amenities PAGE
 
-*Integrated google maps
+*provided different amenities 
+*onclick of individual amenities  respective content will be loaded.
+ 
 
 FILES
-navigation.html
-content-loadup.js
+amenities.html
+
 
 
 
 
 ABHISHEK
 
-HOME PAGE
+TESTIMONAL PAGE
 
-HOME page is completed
+Testimonal page is completed
 *Images are displayed using javascript.
+*Scroll up using js
+*Image slider using js
+
 
 
 FILES
-Changebackground.js
-home_project.html
-home_1.css
+scrollbutton.js
+testimonalimageslider.js
+testimonalimages.js
+testimonal.html

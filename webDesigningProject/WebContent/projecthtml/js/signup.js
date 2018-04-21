@@ -687,8 +687,10 @@ function updateSigninStatus(isSignedIn) {
     // When signin status changes, this function is called.
     // If the signin status is changed to signedIn, we make an API call.
     if (isSignedIn) {
+    	
       makeApiCall();
-      listLabels();
+      redirect();
+      /*listLabels();*/
     }
   }
 
@@ -717,4 +719,55 @@ function updateSigninStatus(isSignedIn) {
   
   
   
-  
+
+
+    window.fbAsyncInit = function() {
+	FB.init({
+		appId : '242138452997498',
+		cookie : true,
+		xfbml : true,
+		version : 'v2.8'
+	});
+
+	FB.AppEvents.logPageView();
+
+};
+
+(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) {
+		return;
+	}
+	js = d.createElement(s);
+	js.id = id;
+	js.src = "https://connect.facebook.net/en_US/sdk.js";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+
+
+
+function checkLoginState() {
+	  FB.getLoginStatus(function(response) {
+	    statusChangeCallback(response);
+	  });
+	}
+
+function statusChangeCallback(response) {
+	
+	console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me?fields=first_name,last_name,email', function(response) {
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+    });
+}
+
+
+function redirect(){
+	
+	window.location
+	.replace("http://localhost:8080/webDesigningProject/projecthtml/home_project.html");
+	document.getElementById('logsign').style.display = 'none';
+
+}

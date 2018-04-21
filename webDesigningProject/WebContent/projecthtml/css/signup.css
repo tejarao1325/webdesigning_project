@@ -204,17 +204,17 @@ text-shadow: 2px 2px 5px red;
 
 #facebookButton{
 	
-	 background-color: #4c70ba;
+	background-color: #4c70ba;
     color: white;
-  width: 25%;
-    padding: 10px 15px;
-    margin: 8px 0;
+    width: 24%;
+    padding: 8px 10px;
+    margin: 6px 0;
     border: none;
     cursor: pointer;
     text-align: center;
-    margin-left: 225px;
-    padding-left:20px;
-    border-radius: 12px;
+    margin-left: 220px;
+    padding-left: 2px;
+    border-radius: 10px;
 }
 
 #signinButton{
