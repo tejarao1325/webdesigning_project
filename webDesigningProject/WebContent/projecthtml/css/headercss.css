@@ -93,12 +93,22 @@
 {
     margin-left: 15px;
 }
-#regbtn,#signOutbtn
+#regbtn
 {
     height: 30px;
     width: 70px;
     background: greenyellow;
-    margin-bottom: 40px;
+     border-radius: 3px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#signOutbtn
+{
+   /*  height: 30px;
+    width: 70px; */
+    background: greenyellow;
+   /*  margin-bottom: 40px; */
     border-radius: 3px;
     opacity: 0.6;
     transition: 0.3s;
@@ -192,10 +202,7 @@
     width: 109px;
 }
 
-#signOut{
-	
-	display: none;
-}
+
 
 #signout{
 	display: none;

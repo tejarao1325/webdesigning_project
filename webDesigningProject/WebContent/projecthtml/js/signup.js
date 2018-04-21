@@ -768,6 +768,18 @@ function redirect(){
 	
 	window.location
 	.replace("http://localhost:8080/webDesigningProject/projecthtml/home_project.html");
-	document.getElementById('logsign').style.display = 'none';
+	
+	var d = new Date();
+
+	d
+			.setTime(d.getTime()
+					+ (365 * 24 * 60 * 60 * 1000));
+
+	var expires = "expires="
+			+ d.toUTCString();
+
+	document.cookie = "gmail" + "=" + "gmail"
+			+ ";" + expires;
+	
 
 }

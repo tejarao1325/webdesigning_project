@@ -5,9 +5,9 @@ window.onload = function() {
 }	
 	
 	function addName(){
-
+		 var gmail =getCookie("gmail")
 	 var name =getCookie("active");
-	 if(name!=""){
+	 if(name!="" || gmail!=""){
 		 document.getElementById('signOut').style.display = 'block';
 		 
 		 document.getElementById('logsign').style.display = 'none';
@@ -42,7 +42,8 @@ window.onload = function() {
 	function signOut(){
 
 		 var name =getCookie("active");
-		 if(name!=""){
+		 var gmail =getCookie("gmail");
+		 if(name!="" || gmail!=""){
 			 
 			 var d = new Date();
 
@@ -54,6 +55,9 @@ window.onload = function() {
 						+ d.toUTCString();
 
 				document.cookie = "active"+ "=" + ""
+				+ ";" + expires;
+				
+				document.cookie = "gmail"+ "=" + ""
 				+ ";" + expires;
 				
 				window.location
