@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+	<title> Table </title>
+	
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/checkavailability.css">
+	<link rel="stylesheet" href="css/headercss.css">
+    <link rel="stylesheet" href="css/footercss.css">
+</head>
+<body>
+<header>        
+       <div id="black">
+           <img src="../projecthtml/images/hhh.jpg" alt="hotel logo" id="hotelLogo">
+           <img src="../projecthtml/images/dialerblack.png" height="20px" width="20px" alt="dialer" id="dialer">
+            <h6 id="callus">Call Us : 444-555-6666 </h6>
+            <img src="../projecthtml/images/email.jpg" height="20px" width="20px" alt="mail" id="blackmail">
+            <h6 id="maile">Mail@hotel.com </h6>
+            <div id="logsign">
+                <img src="../projecthtml/images/login.png"   height="20px" width="20px" alt="login" id="login">
+                <input type="button" name="submit" id="loginbtn" value="Login" onclick="window.location='http://localhost:8080/webDesigningProject/projecthtml/HelloHotelLoginForm.html';"> 
+                
+                 
+                <img src="../projecthtml/images/register.jpg"   height="20px" width="20px" alt="login" id="register">
+                <input type="button" name="submit" id="regbtn" value="Register" onclick="window.location='http://localhost:8080/webDesigningProject/projecthtml/HelloHotelSignUpForm.html';"> 
+                
+            </div>
+            
+            <div id="signOut">
+            <img src="../projecthtml/images/register.jpg"   height="20px" width="20px" alt="login" id="signOutbtn" >
+            <input  id="signOutbtn" type="button" name="submit"  value="SignOut" onclick="signOut()" > 
+           
+        </div>
+        
+         <h3 id="username"></h3>
+        </div>
+        <div>
+            <ul  id="nav">
+                <li><a href="Home">Home</a></li>
+                <li>  <a href="Rooms">Rooms</a>
+                    <ul>
+                        <li><a href='#'>Room 1</a></li>
+                        <li><a href='#'>Room 2</a></li>
+                        <li><a href='#'>Room 3</a></li>
+                        <li><a href='#'>Room 4</a></li>
+                    </ul>
+                </li>
+                    <li>  <a href="#">Dining</a>
+                    <ul>
+                        <li><a href='#'>Event 1</a></li>
+                        <li><a href='#'>Event 2</a></li>
+                        <li><a href='#'>Event 3</a></li>
+                        <li><a href='#'>Event 4</a></li>
+                    </ul>
+                </li>
+                <li>  <a href="#">Gallery</a>
+                    <ul>
+                        <li><a href='#'>Event 1</a></li>
+                        <li><a href='#'>Event 2</a></li>
+                        <li><a href='#'>Event 3</a></li>
+                        <li><a href='#'>Event 4</a></li>
+                    </ul>
+                </li>
+           
+                <li>  <a href="#">Blogs</a></li>
+           
+                <li> <a href="#">Testimonials</a></li>
+                <li> <a href="review.html">Reviews</a></li>
+                                <li> <a href="#">Events</a></li>
+            </ul>
+        </div>
+        
+    </header>
+<figure>
+<h2> Check Room Availability</h2>
+<div class="book-table tf_room_types_reservations">
+    <div class="row-head clearfix">
+		<div class="room-col-1">Room Type</div>
+		<div class="room-col-2">Occupancy</div>
+		<div class="room-col-4">Reservation</div>
+    </div>
+    <ul>
+		<li class="room-row clearfix">
+            <div class="room-col-1">
+                <img src="../projecthtml/images/singleroom.jpg" alt="1 bedroom" class="room-img" height="150" width="170">
+                <div class="room-status">ONLY 3 LEFT AT THIS PRICE</div>
+				<a href="https://demo.themefuse.com/paradisecove/all-room-list/ocean-view-single-room/" hidefocus="true" style="outline: none;"><h2>Ocean View Single Room</h2></a>
+				
+				<div class="room-notice">Prices are per room for 6 nights Included: 11 % TAX, 3 % city tax, All-Inclusive.</div>
+            </div>
+			<div class="room-col-2">
+				<div class="room-type">SINGLE<img src="../projecthtml/images/single.png" alt="single person"></div>
+				<div class="room-price">
+					<strong>$69</strong>
+					<span>per night</span>
+				</div>
+			</div>
+			
+			<div class="room-col-3">
+				<div class="inner">
+					<a rel="leanModal" href="#modal_window_328" class="btn-square popup" id="modal_window_link"  style="outline: none;"><i class="icon-angle-right"></i> Book Now</a>
+				</div>
+			</div>
+		</li>
+	</ul><br><br><br><br>
+	 <ul>
+		<li class="room-row clearfix">
+            <div class="room-col-1">
+                <img src="../projecthtml/images/3bedroom.jpg" alt="3 bedroom" class="room-img" height="150" width="170">
+                <div class="room-status">PLENTY AVAILABLE</div>
+				<a href="https://demo.themefuse.com/paradisecove/all-room-list/3-Bedroom-Apartment/" hidefocus="true" style="outline: none;"><h2>3 Bedroom Apartment</h2></a>
+				
+				<div class="room-notice">Prices are per room for 6 nights Included: 11 % TAX, 3 % city tax, All-Inclusive.</div>
+            </div>
+			<div class="room-col-2">
+				<div class="room-type">DOUBLE<img src="../projecthtml/images/double.png" alt=""></div>
+				<div class="room-price">
+					<strong>$120</strong>
+					<span>per night</span>
+				</div>
+			</div>
+			
+			<div class="room-col-3">
+				<div class="inner">
+					<a rel="leanModal" href="#modal_window_328" class="btn-square popup" id="modal_window_link"  style="outline: none;"><i class="icon-angle-right"></i> Book Now</a>
+				</div>
+			</div>
+		</li>
+	</ul><br><br><br><br>
+	 <ul>
+		<li class="room-row clearfix">
+            <div class="room-col-1">
+                <img src="../projecthtml/images/gardenimage.jpg" alt="Garden View" height="150" width="170"class="room-img">
+                <div class="room-status">ONLY 3 AVAILABLE</div>
+				<a href="https://demo.themefuse.com/paradisecove/all-room-list/Garden-View-Double-Room/" hidefocus="true" style="outline: none;"><h2>Garden View Double Room</h2></a>
+				
+				<div class="room-notice">Prices are per room for 6 nights Included: 11 % TAX, 3 % city tax, All-Inclusive.</div>
+            </div>
+			<div class="room-col-2">
+				<div class="room-type">TRIPLE<img src="../projecthtml/images/triple.png" alt=""></div>
+				<div class="room-price">
+					<strong>$250</strong>
+					<span>per night</span>
+				</div>
+			</div>
+			
+			<div class="room-col-3">
+				<div class="inner">
+					<a rel="leanModal" href="#modal_window_328" class="btn-square popup" id="modal_window_link"  style="outline: none;"><i class="icon-angle-right"></i> Book Now</a>
+				</div>
+			</div>
+		</li>
+	</ul><br><br><br><br>
+	 <ul>
+		<li class="room-row clearfix">
+            <div class="room-col-1">
+                <img src="../projecthtml/images/honeymoonsuits.jpg" alt="Honeymoon suits" height="150" width="170" class="room-img">
+                <div class="room-status">ONLY 3 LEFT AT THIS PRICE</div>
+				<a href="https://demo.themefuse.com/paradisecove/all-room-list/Honeymoon-Suit/" hidefocus="true" style="outline: none;"><h2>Honeymoon Suit</h2></a>
+				
+				<div class="room-notice">Prices are per room for 6 nights Included: 11 % TAX, 3 % city tax, All-Inclusive.</div>
+            </div>
+			<div class="room-col-2">
+				<div class="room-type">DOUBLE<img src="../projecthtml/images/double.png" alt=""></div>
+				<div class="room-price">
+					<strong>$300</strong>
+					<span>per night</span>
+				</div>
+			</div>
+			
+			<div class="room-col-3">
+				<div class="inner">
+					<a rel="leanModal" href="#modal_window_328" class="btn-square popup" id="modal_window_link"  style="outline: none;"><i class="icon-angle-right"></i> Book Now</a>
+				</div>
+			</div>
+		</li>
+	</ul><br><br><br><br>
+	 </div>
+  
+<footer style="float:left; width:100%;">
+	    <div id="foot">
+	        <div id="e1"><h2 id="available">We are available for you<br></h2></div>
+	        <h2 id="seven">24/7</h2>
+	        <div id="a1"> <h2 id="address">Contact :</h2>
+	            <img src="../projecthtml/images/ee.png" height="25px" width="25px" id="email1">
+	            <h2 id="mailmail">Mail@hotel.com</h2>
+
+	            <img src="../projecthtml/images/b.jpg" height="25px" width="25px" id="navinavi">
+	            <h2 id="address2"><address>100 Front St W<br> Toronto , ON M5J 1E3</address></h2></div>
+
+	        <div id="a2"> <img src="../projecthtml/images/dialerblack.png" height="25px" width="25px" id="dial">
+	            <h2 id="call2">444-555-6666</h2></div>  
+
+	        <div id="a3"> <h2 id="mail">Connect :</h2>
+
+	            <img src="../projecthtml/images/tweet2.png" height="20px" width="20px" id="tweet">
+
+	            <img src="../projecthtml/images/face2.jpg" height="20px" width="20px" id="face">
+
+	            <img src="../projecthtml/images/yy.png" height="45px" width="45px" id="in">
+	            
+	            <img src="../projecthtml/images/insta.jpg" height="20px" width="20px" id="insta">
+	            
+	            <img src="../projecthtml/images/wiki.png"  id="wiki">
+	            
+	            <img src="../projecthtml/images/googleplus.png"  id="googleplus">
+	                   
+	        </div>
+
+	        <div id="a4"> <h2 id="social">Newsletter :</h2>
+	            <input type="email" name="EMAIL" placeholder="  YOUR EMAIL ADDRESS" id="em" style="height:28px;width:200px;">
+	            <button type="submit" id="b22">&#10095;</button>
+	        </div>
+	        <img src="../projecthtml/images/hhh.jpg" id="rlogo">
+	    </div>
+	</footer>
+	<h3 style="float:left; width:100%;">Copyright &COPY; 2018</h3>
+
+ </body>
+</html>

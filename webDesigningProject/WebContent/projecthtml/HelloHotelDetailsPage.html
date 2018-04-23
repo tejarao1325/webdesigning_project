@@ -1,0 +1,176 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/headercss.css">
+    <link rel="stylesheet" href="css/footercss.css">
+    <link rel="stylesheet" href="css/HotelDetails.css">
+</head>
+
+<body>
+	<header>        
+       <div id="black">
+            <img src="../projecthtml/images/hhh.jpg" alt="hotel logo" id="hotelLogo">
+           <img src="../projecthtml/images/dialerblack.png" height="20px" width="20px" alt="dialer" id="dialer">
+            <h6 id="callus">Call Us : 444-555-6666 </h6>
+            <img src="../projecthtml/images/email.jpg" height="20px" width="20px" alt="mail" id="blackmail">
+            <h6 id="maile">Mail@hotel.com </h6>
+            <div id="logsign">
+                <img src="../projecthtml/images/login.png"   height="20px" width="20px" alt="login" id="login">
+                <input type="button" name="submit" id="loginbtn" value="Login" onclick="window.location='http://localhost:8080/webDesigningProject/projecthtml/HelloHotelLoginForm.html';"> 
+                
+                 
+                <img src="../projecthtml/images/register.jpg"   height="20px" width="20px" alt="login" id="register">
+                <input type="button" name="submit" id="regbtn" value="Register" onclick="window.location='http://localhost:8080/webDesigningProject/projecthtml/HelloHotelSignUpForm.html';"> 
+                
+            </div>
+            
+            <div id="signOut">
+            <img src="../projecthtml/images/register.jpg"   height="20px" width="20px" alt="login" id="signOutbtn" >
+            <input  id="signOutbtn" type="button" name="submit"  value="SignOut" onclick="signOut()" > 
+           
+        </div>
+        
+         <h3 id="username"></h3>
+        </div>
+        <div>
+            <ul  id="nav">
+                <li><a href="Home">Home</a></li>
+                <li>  <a href="Rooms">Rooms</a>
+                    <ul>
+                        <li><a href='#'>Room 1</a></li>
+                        <li><a href='#'>Room 2</a></li>
+                        <li><a href='#'>Room 3</a></li>
+                        <li><a href='#'>Room 4</a></li>
+                    </ul>
+                </li>
+                    <li>  <a href="#">Dining</a>
+                    <ul>
+                        <li><a href='#'>Event 1</a></li>
+                        <li><a href='#'>Event 2</a></li>
+                        <li><a href='#'>Event 3</a></li>
+                        <li><a href='#'>Event 4</a></li>
+                    </ul>
+                </li>
+                <li>  <a href="#">Gallery</a>
+                    <ul>
+                        <li><a href='#'>Event 1</a></li>
+                        <li><a href='#'>Event 2</a></li>
+                        <li><a href='#'>Event 3</a></li>
+                        <li><a href='#'>Event 4</a></li>
+                    </ul>
+                </li>
+           
+                <li>  <a href="#">Blogs</a></li>
+           
+                <li> <a href="#">Testimonials</a></li>
+                <li> <a href="review.html">Reviews</a></li>
+                                <li> <a href="#">Events</a></li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <section>
+    	<div class="content-middle">
+    		
+    		<div class="bxslider">
+			  <div><img src="../projecthtml/images/slide-1.jpg"></div>
+			  <div><img src="../projecthtml/images/slide-2.jpg"></div>
+			  <div><img src="../projecthtml/images/slide-3.jpg"></div>
+			</div>
+
+			<div class="three-block-main">
+				<div class="tb-block1">
+					<img src="../projecthtml/images/block-image.jpg">
+					<div class="tb-block-content">
+						<h2>LATEST PROMOS</h2>
+						<h4>Special Offer:<span>4th Night Free Offer</span></h4>
+						<p>Special Offer: 4th Night Free Offer Stay four nights, and pay for three. Your free night will be corrected at check-out. Enjoy added value as you discover gay destinations</p>
+					</div>
+				</div>
+				<div class="tb-block1">
+					<img src="../projecthtml/images/block-image.jpg">
+					<div class="tb-block-content">
+						<h2>OUR SERVICES</h2>
+						<h4>Enjoy 5 Star Services & Amenitites</h4>
+						<ul>
+							<li>FITNESS CENTRE</li>
+							<li>2 RESTAUNRANTS</li>
+							<li>INFINITY POOL</li>
+							<li>TENNIS COURT</li>
+							<li>SPA SERVICES</li>
+							<li>WEDDINGS</li>
+							<li>POOL FOR KIDS</li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="tb-block1">
+					<img src="../projecthtml/images/block-image.jpg">
+					<div class="tb-block-content">
+						<h2>TRANSPORTATION</h2>
+						<h4>Public Transportation Nearby</h4>
+						<p>ll major and domestic airlines serve Seattle Tacoma International Airport – Depending on traffic and weather, transfer can take up to 30 minutes or even more.</p>
+					</div>
+				</div>
+			</div>
+
+    	</div>
+    </section>
+
+	<footer style="float:left; width:100%;">
+	    <div id="foot">
+	        <div id="e1"><h2 id="available">We are available for you<br></h2></div>
+	        <h2 id="seven">24/7</h2>
+	        <div id="a1"> <h2 id="address">Contact :</h2>
+	            <img src="../projecthtml/images/ee.png" height="25px" width="25px" id="email1">
+	            <h2 id="mailmail">Mail@hotel.com</h2>
+
+	            <img src="../projecthtml/images/b.jpg" height="25px" width="25px" id="navinavi">
+	            <h2 id="address2"><address>100 Front St W<br> Toronto , ON M5J 1E3</address></h2></div>
+
+	        <div id="a2"> <img src="../projecthtml/images/dialerblack.png" height="25px" width="25px" id="dial">
+	            <h2 id="call2">444-555-6666</h2></div>  
+
+	        <div id="a3"> <h2 id="mail">Connect :</h2>
+
+	            <img src="../projecthtml/images/tweet2.png" height="20px" width="20px" id="tweet">
+
+	            <img src="../projecthtml/images/face2.jpg" height="20px" width="20px" id="face">
+
+	            <img src="../projecthtml/images/yy.png" height="45px" width="45px" id="in">
+	            
+	            <img src="../projecthtml/images/insta.jpg" height="20px" width="20px" id="insta">
+	            
+	            <img src="../projecthtml/images/wiki.png"  id="wiki">
+	            
+	            <img src="../projecthtml/images/googleplus.png"  id="googleplus">
+	                   
+	        </div>
+
+	        <div id="a4"> <h2 id="social">Newsletter :</h2>
+	            <input type="email" name="EMAIL" placeholder="  YOUR EMAIL ADDRESS" id="em" style="height:28px;width:200px;">
+	            <button type="submit" id="b22">&#10095;</button>
+	        </div>
+	        <img src="../projecthtml/images/hhh.jpg" id="rlogo">
+	    </div>
+	</footer>
+	<h3 style="float:left; width:100%;">Copyright &COPY; 2018</h3>
+</body>
+
+<script src="js/home.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script>
+    $('.bxslider').bxSlider({
+	  auto: true,
+	  autoControls: true,
+	  stopAutoOnClick: true,
+	  pager: false
+	});
+  </script>
+
+</html>
