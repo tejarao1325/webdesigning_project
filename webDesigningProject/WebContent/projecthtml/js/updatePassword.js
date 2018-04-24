@@ -1,3 +1,9 @@
+
+/*
+ * 
+ * Function for validating email and checking wether email is already registered.
+ */
+
 function validateEmail() {
 
 	if (document.PassWordForm.email.value == "") {
@@ -29,6 +35,11 @@ function validateEmail() {
 
 }
 
+
+/*
+ * 
+ * Function for validating email and password
+ */
 function validatepassword() {
 
 	if (document.PassWordForm.psw.value == "") {
@@ -93,6 +104,13 @@ function validatepassword() {
 
 	}
 }
+
+
+
+/*
+ * 
+ * Function for validating password and confirm password
+ */
 
 function confirmPassword() {
 
@@ -161,6 +179,11 @@ function confirmPassword() {
 	}
 }
 
+
+/*
+ * 
+ * Function for get cookie
+ */
 function getCookie(UserEmail) {
 	var name = UserEmail + "=";
 	var decodedCookie = decodeURIComponent(document.cookie);
@@ -180,17 +203,12 @@ function getCookie(UserEmail) {
 
 
 
-var span = document.getElementsByClassName("close")[0];
 
 
-//When the user clicks on <span> (x), close the modal
- function close() {
- modal.style.display = "none";
-}
-
-
-
-
+ /*
+  * 
+  * Function for displaying the modal after updating password is successfull
+  */
 
 function updatePassword(){
 	
@@ -206,6 +224,11 @@ function updatePassword(){
 }
 
 
+
+/*
+ * 
+ * Function for redirecting to login page after sucessfull updating password
+ */
 
 function login(){
 	window.location

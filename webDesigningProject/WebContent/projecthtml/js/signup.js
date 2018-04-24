@@ -1,5 +1,10 @@
-function getCookie(UserEmail) {
-	var name = UserEmail + "=";
+/*
+ * 
+ * Function for getting Cookie
+ */
+
+function getCookie(value) {
+	var name = value + "=";
 	var decodedCookie = decodeURIComponent(document.cookie);
 	var ca = decodedCookie.split(';');
 	for (var i = 0; i < ca.length; i++) {
@@ -13,6 +18,13 @@ function getCookie(UserEmail) {
 	}
 	return "";
 }
+
+
+/*
+ * 
+ * Function for validating form on cick of sumit and if all conditions are valid setting up cookie
+ * for email ,password and active field
+ */
 
 function saveDetails() {
 
@@ -30,8 +42,6 @@ function saveDetails() {
 		pswValue = escape(document.signupForm.passwordInput.value);
 
 		name = escape(document.signupForm.nameInput.value);
-
-		var firstname = getCookie("active");
 
 		document.cookie = emailValue + "=" + emailValue + ";" + expires;
 
@@ -51,11 +61,22 @@ function saveDetails() {
 	}
 }
 
+
+/*
+ * 
+ * Function for redirecting to home page on click of cancel button
+ */
 function cancel() {
 	window.location
 			.replace("http://localhost:8080/webDesigningProject/projecthtml/home_project.html");
 
 }
+
+
+/*
+ * 
+ * Function for validating firstname
+ */
 
 function validateFirstName() {
 	if (document.signupForm.nameInput.value == "") {
@@ -75,6 +96,11 @@ function validateFirstName() {
 
 }
 
+
+/*
+ * 
+ * Function for validating firstname and lastname
+ */
 function validateLastName() {
 
 	if (document.signupForm.lastnameInput.value != "") {
@@ -100,6 +126,12 @@ function validateLastName() {
 
 	}
 }
+
+
+/*
+ * 
+ * Function for validating lastname and email
+ */
 
 function validateEmail() {
 	if (document.signupForm.email.value == "") {
@@ -137,6 +169,11 @@ function validateEmail() {
 
 }
 
+
+/*
+ * 
+ * Function for validating password and email
+ */
 function validatePassword() {
 
 	if (document.signupForm.passwordInput.value == "") {
@@ -157,6 +194,11 @@ function validatePassword() {
 	}
 }
 
+
+/*
+ * 
+ * Function for validating password and confirm password
+ */
 function validateConfirmPswd() {
 
 	if (document.signupForm.confirmpasswordInput.value == "") {
@@ -182,6 +224,10 @@ function validateConfirmPswd() {
 
 
 
+/*
+ * 
+ * Function for validating phonenumber and confirmpassword
+ */
 function validatePhoneNumber(){
 	
 	var phoneNumberPattern = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
@@ -211,6 +257,11 @@ function validatePhoneNumber(){
 		}
 }
 
+
+/*
+ * 
+ * Function for redirecting  to homepage  onclick of already a user button
+ */
 function redirectToLogin() {
 
 	window.location
@@ -218,12 +269,24 @@ function redirectToLogin() {
 
 }
 
+
+/*
+ * 
+ * Function for gmail api
+ */
+
 function handleClientLoad() {
 	// Loads the client library and the auth2 library together for efficiency.
 	// Loading the auth2 library is optional here since `gapi.client.init` function will load
 	// it if not already loaded. Loading it upfront can save one network request.
 	gapi.load('client:auth2', initClient);
 }
+
+/*
+ * 
+ * Function for gmail api
+ */
+
 
 function initClient() {
 	// Initialize the client with API key and People API, and initialize OAuth with an
@@ -250,16 +313,30 @@ function initClient() {
 					});
 }
 
+
+
+/*
+ * 
+ * Function for gmail api
+ */
+
+
 function updateSigninStatus(isSignedIn) {
 	// When signin status changes, this function is called.
 	// If the signin status is changed to signedIn, we make an API call.
 	if (isSignedIn) {
 
 		makeApiCall();
-		redirect();
+		redirecttoHomePageForGmailLogin();
 		/*listLabels();*/
 	}
 }
+
+/*
+ * 
+ * Function for gmail api
+ */
+
 
 function handleSignInClick(event) {
 	// Ideally the button should only show up after gapi.client.init finishes, so that this
@@ -283,6 +360,12 @@ function makeApiCall() {
 	});
 }
 
+
+/*
+ * 
+ * Function for facebook api
+ */
+
 window.fbAsyncInit = function() {
 	FB.init({
 		appId : '242138452997498',
@@ -295,6 +378,11 @@ window.fbAsyncInit = function() {
 
 };
 
+
+/*
+ * 
+ * Function for facebook api
+ */
 (function(d, s, id) {
 	var js, fjs = d.getElementsByTagName(s)[0];
 	if (d.getElementById(id)) {
@@ -306,11 +394,22 @@ window.fbAsyncInit = function() {
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+/*
+ * 
+ * Function for facebook api
+ */
+
 function checkLoginState() {
 	FB.getLoginStatus(function(response) {
 		statusChangeCallback(response);
 	});
 }
+
+
+/*
+ * 
+ * Function for facebook api
+ */
 
 function statusChangeCallback(response) {
 
@@ -322,7 +421,14 @@ function statusChangeCallback(response) {
 	});
 }
 
-function redirect() {
+
+/*
+ * 
+ * Function for redirecting to  home page for signed in user using gmail api
+ * and setting the cookie as gmail
+ */
+
+function redirecttoHomePageForGmailLogin() {
 
 	window.location
 			.replace("http://localhost:8080/webDesigningProject/projecthtml/home_project.html");

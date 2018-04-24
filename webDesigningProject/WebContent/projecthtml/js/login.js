@@ -1,3 +1,8 @@
+
+/*
+ * 
+ * Function for getting cookie
+ */
 function getCookie(UserEmail) {
 	var name = UserEmail + "=";
 	var decodedCookie = decodeURIComponent(document.cookie);
@@ -13,6 +18,12 @@ function getCookie(UserEmail) {
 	}
 	return "";
 }
+
+
+/*
+ * 
+ * Function for validating email
+ */
 
 function validateEmail() {
 
@@ -46,6 +57,13 @@ function validateEmail() {
 
 }
 
+
+/*
+ * 
+ * Function for validating password
+ */
+
+
 function validatepassword() {
 
 	if (document.loginForm.psw.value == "") {
@@ -63,6 +81,13 @@ function validatepassword() {
 	}
 
 }
+
+
+/*
+ * 
+ * Function for validating both email and password on click of login button and checking the values in cookie
+ */
+
 
 function validateDetails() {
 
@@ -97,6 +122,12 @@ function validateDetails() {
 
 				}
 
+		
+		/*
+		 * 
+		 * Function for showing the password
+		 */
+		
 function showPassword() {
 			var x = document.loginForm.psw.value;
 

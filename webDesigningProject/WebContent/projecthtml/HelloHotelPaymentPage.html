@@ -159,12 +159,12 @@
 							<label id="cardNumber" for="cardNumber"><b>CARD NUMBER:</b></label>
 								 <input id="numberInput" type="text" placeholder="Enter Card Number"
 								name="email" onclick="valiadateCardNumber()"> 
-								 <span id="cardError"></span><br>
+								 <span id="debitcardError"></span><br>
 								 
 								 <label id="cardName" for="cardName"><b>NAME ON CARD: </b></label>
 								 <input id="nameInput" type="text" placeholder="NAME ON CARD"
 								name="email" onclick="valiadateCardNumber()"> 
-								 <span id="cardNameError"></span><br>
+								 <span id="debitcardNameError"></span><br>
 
                                  <label id="cardExpiry" for="cardExpiry"><b>EXPIRATION :</b></label>
 							    
@@ -175,13 +175,12 @@
 								 <label id="cvv" for="cvv"><b>CVV: </b></label>
 								 <input id="cvvInput" type="number" placeholder="CVV"
 								name="email" onclick="valiadateCvvError()"> 
-								 <span id="cvvError"></span><br>
+								 <span id="debitcvvError"></span><br>
 																
-							<button id="creditCardButton" type="button"
-								onclick="validateDetails()">PAY</button>
+								<button id="creditCardButton" type="button"
+								onclick="validateDebitcardDetails()">PAY</button>
 							<br>
 							<br>
-						
 				</div>
 			</div>
 			

@@ -1,3 +1,7 @@
+/*
+ * 
+ * Function for onload setting all the form as none
+ */
 
 window.onload = function() {
 	
@@ -8,6 +12,12 @@ window.onload = function() {
 	
 }	
 
+
+/*
+ * 
+ * Function for opening paypal form
+ */
+
 function openPaypalLogin (){
 	document.getElementById('payPalForm').style.display = 'block';
 	document.getElementById('creditCardForm').style.display = 'none';
@@ -15,6 +25,11 @@ function openPaypalLogin (){
 	document.getElementById('debitCardForm').style.display = 'none';
 }
 
+
+/*
+ * 
+ * Function for opening creditcard form
+ */
 function openCrediCardLogin(){
 	
 	document.getElementById('payPalForm').style.display = 'none';
@@ -25,6 +40,11 @@ function openCrediCardLogin(){
 }
 
 
+
+/*
+ * 
+ * Function for opening netbanking form
+ */
 function openNetBankingForm(){
 	
 	document.getElementById('payPalForm').style.display = 'none';
@@ -33,6 +53,12 @@ function openNetBankingForm(){
 	document.getElementById('debitCardForm').style.display = 'none';
 	
 }
+
+
+/*
+ * 
+ * Function for opening DebitCardForm
+ */
 
 function openDebitCardLogin(){
 	
@@ -43,6 +69,11 @@ function openDebitCardLogin(){
 }
 
 
+
+/*
+ * 
+ * Function for validating paypal Details
+ */
 
 function validateDetails(){
 	
@@ -64,6 +95,11 @@ function validateDetails(){
 }
 
 
+/*
+ * 
+ * Function for displaying the password
+ */
+
 function showPassword() {
 	var x = document.forms.payPalForm.passwordinput.value;
 
@@ -82,6 +118,11 @@ function showPassword() {
 }
 
 
+
+/*
+ * 
+ * Function for validating card detailss
+ */
 
 function validatecardDetails(){
 	
@@ -117,7 +158,41 @@ function validatecardDetails(){
 }
 
 
-
+function validateDebitcardDetails(){
+	
+	
+	
+	if (document.forms.creditCardForm.numberInput.value == ""
+		&& document.forms.creditCardForm.nameInput.value == "" && document.forms.creditCardForm.cvvInput.value == "" ) {
+		document.getElementById('debitcardError').style.display = 'block';
+		document.getElementById('debitcardNameError').style.display = 'block';
+		document.getElementById('debitcvvError').style.display = 'block';
+		document.getElementById('debitcardError').innerHTML = "Please enter Card Number";
+		document.getElementById('debitcardNameError').innerHTML = "Password enter card name";
+		document.getElementById('debitcvvError').innerHTML = "Password enter CVV";
+	}else if(document.forms.creditCardForm.numberInput.value == ""){
+		document.getElementById('debitcardError').style.display = 'block';
+		document.getElementById('debitcardError').innerHTML = "Please enter Card Number";
+		
+	}else if(document.forms.creditCardForm.nameInput.value == ""){
+		document.getElementById('debitcardNameError').style.display = 'block';
+		document.getElementById('debitcardError').style.display = 'none';
+		
+		document.getElementById('debitcardNameError').innerHTML = "Password enter card name";
+		
+	}else if(document.forms.creditCardForm.cvvInput.value == ""){
+		document.getElementById('debitcvvError').style.display = 'block';
+		document.getElementById('debitcvvError').innerHTML = "Password enter CVV";
+		document.getElementById('debitcardError').style.display = 'none';
+		document.getElementById('debitcardNameError').style.display = 'none';
+		
+	}else{
+		document.getElementById('debitcardError').style.display = 'none';
+		document.getElementById('debitcardNameError').style.display = 'none';
+		document.getElementById('debitcvvError').style.display = 'none';
+	}
+	
+}
 
 
 
