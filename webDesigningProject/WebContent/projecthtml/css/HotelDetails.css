@@ -1,0 +1,35 @@
+body {font-family: Arial, Helvetica, sans-serif;
+/*  background-image: url("../images/booking.jpg"); */
+background-color:#c1c4c9;
+ background-repeat: none;
+ margin:0;
+ padding:0;
+ background: #fff;
+}
+.content-middle{
+  width:1200px;
+  margin:0 auto;
+  padding:50px 0;
+}
+.bxslider img{
+  max-width:100%;
+}
+.three-block-main{
+  float:left;
+  width:100%;
+  margin-bottom:80px;
+}
+.tb-block1{
+  background:#fff;
+  float:left;
+  width:350px;
+  margin:0 25px;
+  -webkit-box-shadow:0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow:0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.tb-block1 img{
+  width:100%;
+}
+.tb-block-content{
+  padding:15px;
+}
