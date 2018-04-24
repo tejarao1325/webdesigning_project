@@ -300,3 +300,23 @@ margin-left:168px;
 	color:red;
 	margin-left:300px;
 }
+
+
+
+
+#debitcardError{
+	color:red;
+	margin-left:330px;
+}
+
+
+#debitcardNameError{
+	color:red;
+	margin-left:330px;
+}
+
+
+#debitcvvError{
+	color:red;
+	margin-left:300px;
+}

@@ -133,7 +133,7 @@ function validatecardDetails(){
 		document.getElementById('cvvError').style.display = 'block';
 		document.getElementById('cardError').innerHTML = "Please enter Card Number";
 		document.getElementById('cardNameError').innerHTML = "Password enter card name";
-		document.getElementById('cvvError').innerHTML = "Password enter CVV";
+		document.getElementById('cvvError').innerHTML = "Please enter CVV";
 	}else if(document.forms.creditCardForm.numberInput.value == ""){
 		document.getElementById('cardError').style.display = 'block';
 		document.getElementById('cardError').innerHTML = "Please enter Card Number";
@@ -146,7 +146,7 @@ function validatecardDetails(){
 		
 	}else if(document.forms.creditCardForm.cvvInput.value == ""){
 		document.getElementById('cvvError').style.display = 'block';
-		document.getElementById('cvvError').innerHTML = "Password enter CVV";
+		document.getElementById('cvvError').innerHTML = "Please enter CVV";
 		document.getElementById('cardError').style.display = 'none';
 		document.getElementById('cardNameError').style.display = 'none';
 		
@@ -169,7 +169,7 @@ function validateDebitcardDetails(){
 		document.getElementById('debitcvvError').style.display = 'block';
 		document.getElementById('debitcardError').innerHTML = "Please enter Card Number";
 		document.getElementById('debitcardNameError').innerHTML = "Password enter card name";
-		document.getElementById('debitcvvError').innerHTML = "Password enter CVV";
+		document.getElementById('debitcvvError').innerHTML = "Please enter CVV";
 	}else if(document.forms.creditCardForm.numberInput.value == ""){
 		document.getElementById('debitcardError').style.display = 'block';
 		document.getElementById('debitcardError').innerHTML = "Please enter Card Number";
@@ -182,7 +182,7 @@ function validateDebitcardDetails(){
 		
 	}else if(document.forms.creditCardForm.cvvInput.value == ""){
 		document.getElementById('debitcvvError').style.display = 'block';
-		document.getElementById('debitcvvError').innerHTML = "Password enter CVV";
+		document.getElementById('debitcvvError').innerHTML = "Please enter CVV";
 		document.getElementById('debitcardError').style.display = 'none';
 		document.getElementById('debitcardNameError').style.display = 'none';
 		
