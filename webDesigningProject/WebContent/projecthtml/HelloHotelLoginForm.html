@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<script src="js/login.js"></script>
+
+
+	<div id="title">
+		<img src="../projecthtml/images/hhh.jpg" alt="hotel logo"
+			id="hotelLogo2">
+		<h3 id="hotelTitle">HELLO HOTEL</h3>
+	</div>
+	<div id="header"></div>
+	<script src="https://code.jquery.com/jquery-1.10.2.js">
+		
+	</script>
+
+
+	<script>
+		$(function() {
+			$("#header").load("headerproject.html");
+		});
+	</script>
+
+<!-- onclick ="saveDetails()"  validateDetails()-->
+<form name="loginForm">
+  
+  <div >
+    <h1 class="textContainer">LOGIN</h1>
+    <label id ="email" for="email"><b>EMAIL:</b></label>
+    <input id ="emailInput" type="email" placeholder="Enter Email" name="email" onclick="validateEmail()">
+    <i class="fa fa-user"></i><br>
+    <span id="emailerror" ></span><br>
+
+    <label id ="password" for="psw"><b>PASSWORD:</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" onclick="validatepassword()" >
+     <i class="fa fa-lock"></i><br>
+    <input id ="Showpassword" type="checkbox" name="showPassowrd" value="showPassowrd" onclick="showPassword()"> Show Password
+      <br>  <span id="passwordError"></span><br>
+      
+    <button id ="loginButton" type="button" onclick ="validateDetails()">LOGIN</button><br><br>
+    <label id ="rememberMe">
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>&nbsp;
+    
+      <label id ="forgotPassword">
+    <span class="psw"> <a href="HelloHotelForgotPassword.html"> Forgot password?</a></span>
+    </label><br>
+    <br><label id ="notRegistered">
+    <span class="account">Do you have an Account <a href="HelloHotelSignUpForm.html">SignUp</a></span>
+    </label>
+  </div>
+
+  
+    
+
+</form>
+
+<div id="footer"></div>
+
+	<script>
+		$(function() {
+			$("#footer").load("footer_project.html");
+		});
+	</script>
+</body>
+</html>

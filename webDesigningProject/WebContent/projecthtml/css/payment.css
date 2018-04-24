@@ -1,0 +1,322 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+
+#black{
+	display:none;
+}
+
+#title{
+	height: 60px;
+    width: 100%;
+    background:snow;
+
+}
+
+#hotelTitle{
+	
+	color:black;
+margin-left:600px;
+font-size: xx-large;
+margin-top:-50px;
+text-shadow: 2px 2px 5px red;
+}
+
+#hotelLogo2
+{
+    height: 60px;
+    width: 70px;
+    background: snow;
+    margin-left: 500px;
+}
+
+body{
+padding:0;
+margin:0;
+font-family: 'Open Sans', sans-serif;
+}
+
+
+#payPal{
+	margin-left:150px;
+	border-radius: 12px;
+	padding: 10px 24px;
+	font-size:24px;
+	 -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+  
+}
+  
+  
+  #creditCard{
+	border-radius: 12px;
+	padding: 10px 24px;
+	font-size:24px;
+	 -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+  
+  
+  
+  #netbanking{
+	border-radius: 12px;
+	padding: 10px 24px;
+	font-size:24px;
+	 -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+  
+  
+  #debitCard{
+	border-radius: 12px;
+	padding: 10px 24px;
+	font-size:24px;
+	 -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+ 
+ 
+ #heading{
+ margin-left:600px;
+ } 
+ 
+ 
+ #paymentOption{
+ margin-top:30px;
+ height:150px;
+ border: 3px solid #555;
+  width: 80%;
+  margin-left:170px;
+  margin-bottom:50px;
+ }
+ 
+ 
+ #select{
+ margin-left:280px;
+ }
+ 
+ 
+ #payPalForm{
+
+ margin-top:80px;
+ height:400px;
+ border: 3px solid #555;
+  width: 80%;
+  margin-left:170px;
+  margin-bottom:50px;
+
+ 
+ }
+ 
+ 
+ 
+ input[type=email], input[type=password],input[type=text] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=number]
+{
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#email{
+margin-left:180px;
+margin-top:150px;
+
+}
+
+#cardNumber{
+	margin-left:210px;
+margin-top:150px;
+}
+
+#cardName{
+	margin-left:205px;
+margin-top:150px;
+}
+
+#cardExpiry{
+	margin-left:230px;
+margin-top:150px;
+}
+
+#cvv{
+	margin-left:300px;
+margin-top:150px;
+}
+
+#name
+{
+margin-left:210px;
+margin-top:150px;
+
+}
+
+#lastname
+{
+margin-left:210px;
+margin-top:150px;
+
+}
+
+#password{
+margin-left:168px;
+
+}
+#Showpassword{
+	margin-left:270px;
+}
+
+#loginPaypalButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+   
+}
+
+#payPalText{
+	
+	margin-left:300px;
+}
+ 
+ 
+ #loginPaypalButton {
+    text-align: center;
+    margin-left: 275px;
+    padding-left:370px;
+}
+
+
+#creditCardForm{
+	
+	 margin-top:80px;
+ height:500px;
+ border: 3px solid #555;
+  width: 80%;
+  margin-left:170px;
+  margin-bottom:50px;
+}
+
+#creditCardButton{
+	background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 343px;
+    padding-left:100px;
+}
+
+
+.radio-btns{
+    margin-bottom: 30px;
+    margin-left:200px;
+}
+
+
+.radio-btns label {
+		font-size: 13px;
+		color: #000;
+		padding: 0px 0 0 2px;
+		font-weight: 600;
+	}
+	
+	
+	#netBankingForm{
+	
+	 margin-top:80px;
+ height:400px;
+ border: 3px solid #555;
+  width: 80%;
+  margin-left:170px;
+  margin-bottom:50px;
+}
+
+.swit{
+	float:left;
+	width:50%;
+}
+
+
+
+#debitCardForm{
+	
+	 margin-top:80px;
+ height:400px;
+ border: 3px solid #555;
+  width: 80%;
+  margin-left:170px;
+  margin-bottom:50px;
+}
+
+
+
+#emailerror{
+	color:red;
+	margin-left:300px;
+	
+}
+
+
+#passwordError{
+	color:red;
+	margin-left:300px;
+	
+}
+
+
+#cardError{
+	color:red;
+	margin-left:330px;
+}
+
+
+#cardNameError{
+	color:red;
+	margin-left:330px;
+}
+
+
+#cvvError{
+	color:red;
+	margin-left:300px;
+}
+
+
+
+
+#debitcardError{
+	color:red;
+	margin-left:330px;
+}
+
+
+#debitcardNameError{
+	color:red;
+	margin-left:330px;
+}
+
+
+#debitcvvError{
+	color:red;
+	margin-left:300px;
+}

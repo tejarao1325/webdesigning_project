@@ -52,6 +52,24 @@
     margin-left: 1000px;
     margin-top: -66px;
 }
+
+#signOut{
+	
+	 height: 50px;
+    width: 250px;
+    background: snow;
+    margin-left: 1000px;
+    margin-top: -66px;
+}
+
+#username{
+	text-transform: uppercase;
+	 height: 50px;
+    width: 250px;
+    background: snow;
+    margin-left: 1100px;
+    margin-top: -45px;
+}
 #login
 {
     margin-left: 10px;
@@ -80,12 +98,23 @@
     height: 30px;
     width: 70px;
     background: greenyellow;
-    margin-bottom: 40px;
+     border-radius: 3px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#signOutbtn
+{
+   /*  height: 30px;
+    width: 70px; */
+    background: greenyellow;
+   /*  margin-bottom: 40px; */
     border-radius: 3px;
     opacity: 0.6;
     transition: 0.3s;
 }
-#regbtn:hover
+
+#regbtn:hover,signOutbtn:hover
 {
     opacity: 1;
 }
@@ -171,4 +200,10 @@
     left: 0;
     top: 34px;
     width: 109px;
+}
+
+
+
+#signout{
+	display: none;
 }

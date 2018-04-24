@@ -1,0 +1,54 @@
+# webdesigning_project
+Hello Hotel Webdesigning project
+
+PHASE 3:
+
+SAITEJA THANDRA
+
+PAYMENT PAGE
+
+*Provided four different types of payments.
+*Onclick of each payment button respective form will be loaded
+* validating email and password for paypal payment
+*vallidating all fields such as cardnumber, cardname,cvv for debit and credit card.
+
+
+FILES
+HelloHotelPaymentPage.html
+payment.css
+payment.js
+
+
+
+
+BERNARDO
+
+Amenities PAGE
+
+*provided different amenities 
+*onclick of individual amenities  respective content will be loaded.
+ 
+
+FILES
+amenities.html
+
+
+
+
+
+ABHISHEK
+
+TESTIMONAL PAGE
+
+Testimonal page is completed
+*Images are displayed using javascript.
+*Scroll up using js
+*Image slider using js
+
+
+
+FILES
+scrollbutton.js
+testimonalimageslider.js
+testimonalimages.js
+testimonal.html

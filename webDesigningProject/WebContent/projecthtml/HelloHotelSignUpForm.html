@@ -5,9 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/signup.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-
+ <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
 <script src="js/signup.js">
 </script>
 
@@ -29,6 +33,16 @@
 	</script>
 
 	<main id="signUp">
+	
+	<div id="otherButtons">
+	
+	<fb:login-button id ="facebookButton" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button><br>
+	<button id ="googlebutton"  class="fa fa-google" type="button" onclick ="handleSignInClick()">  SIGNUP WITH GOOGLE</button><br>
+	<button id ="signinButton"  class="fa fa-user"  type="button" onclick ="redirectToLogin()">  ALREADY A USER?</button>
+	
+	</div>
+	
+	
 <form name="signupForm">
   
   
@@ -66,14 +80,19 @@
     
     <div class="unrequired">
      <label id ="phoneNumber" for="psw"><b>PHONE NUMBER:</b></label>
-    <input id ="phoneNumberInput" type="text" placeholder="Enter Phone number" name="phNumber" >
+    <input id ="phoneNumberInput" type="text" placeholder="Enter Phone number" name="phNumber" onclick="validatePhoneNumber()" >
      <span id="phoneError" ></span><br>
      </div>
    
     <button id ="signupButton" type="button" onclick ="saveDetails()">SIGN UP</button><br>
     <button id ="cancelButton" type="button" onclick ="cancel()">CANCEL</button><br><br>
+    
+    
 
 </form>
+
+
+
 
 </main>
 

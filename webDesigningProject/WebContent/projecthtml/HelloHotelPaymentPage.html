@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/payment.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+</head>
+<body>
+     <script src="js/home.js"></script>
+	<script src="js/payment.js"></script>
+
+
+	<div id="title">
+		<img src="../projecthtml/images/hhh.jpg" alt="hotel logo"
+			id="hotelLogo2">
+		<h3 id="hotelTitle">HELLO HOTEL</h3>
+	</div>
+	<div id="header"></div>
+	<script src="https://code.jquery.com/jquery-1.10.2.js">
+		
+	</script>
+
+
+	<script>
+		$(function() {
+			$("#header").load("headerproject.html");
+		});
+	</script>
+
+	
+		<h1 id="heading">PAYMENT FORM</h1>
+		<form id="paymentOption">
+			<h1 id="select">Select Payment Method</h1>
+			<div id="options">
+				<button id="payPal" type="button" onclick="openPaypalLogin()">
+					PayPal <i class="fa fa-cc-paypal"></i>
+				</button>
+
+				<button id="creditCard" type="button" onclick="openCrediCardLogin()">
+					Credit Card <i class="fa fa-credit-card"></i>
+				</button>
+				<button id="netbanking" type="button" onclick="openNetBankingForm()">
+					Netbanking <i class="material-icons">mouse</i>
+				</button>
+				<button id="debitCard" type="button" onclick="openDebitCardLogin()">
+					Debit Card <i class="fa fa-cc-visa"></i>
+				</button>
+			</div>
+		</form>
+
+<form id="payPalForm">
+			<div class="payment-info">
+				<h4 id="payPalText">Already Have A PayPal Account?</h4>
+				<div class="login-tab">
+					<div class="user-login">
+							<label id="email" for="email"><b>PAYPAL ID:</b></label> <input
+								id="emailInput" type="email" placeholder="Enter PAYPAL Id"
+								name="email" onclick="validateEmail()"> <i
+								class="fa fa-user"></i><br> <span id="emailerror"></span><br>
+
+							<label id="password" for="psw"><b>PASSWORD:</b></label> <input
+								id="passwordinput" type="password" placeholder="Enter Password" name="psw"
+								onclick="validatepassword()"> <i class="fa fa-lock"></i><br>
+							<input id="Showpassword" type="checkbox" name="showPassowrd"
+								value="showPassowrd" onclick="showPassword()"> Show
+							Password <br> <span id="passwordError"></span><br>
+
+							<button id="loginPaypalButton" type="button"
+								onclick="validateDetails()">LOGIN</button>
+							<br>
+							<br>
+						
+					</div>
+				</div>
+			</div>
+		
+</form>
+
+
+          <form id="creditCardForm">
+			<div class="payment-info">
+				<h4 id="payPalText">CREDIT CARD INFO</h4>
+				<div class="creditCard">
+							<label id="cardNumber" for="cardNumber"><b>CARD NUMBER:</b></label>
+								 <input id="numberInput" type="text" placeholder="Enter Card Number"
+								name="email" onclick="valiadateCardNumber()"> 
+								 <span id="cardError"></span><br>
+								 
+								 <label id="cardName" for="cardName"><b>NAME ON CARD: </b></label>
+								 <input id="nameInput" type="text" placeholder="NAME ON CARD"
+								  name="email" onclick="valiadateCardNumber()"> 
+								 <span id="cardNameError"></span><br>
+
+                                 <label id="cardExpiry" for="cardExpiry"><b>EXPIRATION :</b></label>
+							    
+								 <input type="number" class="text_box" type="text" value="01" min="1" />	
+																
+								 <input type="number" class="text_box" type="text" value="2018" min="1" />	<br>
+								 
+								 <label id="cvv" for="cvv"><b>CVV: </b></label>
+								 <input id="cvvInput" type="number" placeholder="CVV"
+								name="email" onclick="valiadateCvvError()"> 
+								 <span id="cvvError"></span><br>
+																
+							<button id="creditCardButton" type="button"
+								onclick="validatecardDetails()">PAY</button>
+							<br>
+							<br>
+						
+				</div>
+			</div>
+			
+		
+</form>
+
+
+
+<form id="netBankingForm">
+			<div class="payment-info">
+				<h4 id="payPalText">Select the bank and proceed for netbanking</h4>
+				<div class="netBanking">
+							
+							
+							<div class="radio-btns">
+												<div class="swit">								
+													<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio" checked=""><i></i>RBC Bank</label> </div></div>
+													<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>TD Bank</label> </div></div>
+													<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Scotia Bank</label> </div></div>
+													</div>
+												<div class="swit">								
+													<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Canada Bank</label> </div></div>	
+													<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>CIBC Bank</label> </div></div>
+													<div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>National Bank</label> </div></div>		
+												</div>
+												
+												</div><br>
+																
+							<button id="creditCardButton" type="button"
+								onclick="validateDetails()">REDIRECT TO BANK NETBANKING</button>
+							<br>
+							<br>
+						
+				</div>
+			</div>
+			
+		
+</form>
+
+
+
+
+<form id="debitCardForm">
+			<div class="payment-info">
+				<h4 id="payPalText">DEBIT CARD INFO</h4>
+				<div class="creditCard">
+							<label id="cardNumber" for="cardNumber"><b>CARD NUMBER:</b></label>
+								 <input id="numberInput" type="text" placeholder="Enter Card Number"
+								name="email" onclick="valiadateCardNumber()"> 
+								 <span id="debitcardError"></span><br>
+								 
+								 <label id="cardName" for="cardName"><b>NAME ON CARD: </b></label>
+								 <input id="nameInput" type="text" placeholder="NAME ON CARD"
+								name="email" onclick="valiadateCardNumber()"> 
+								 <span id="debitcardNameError"></span><br>
+
+                                 <label id="cardExpiry" for="cardExpiry"><b>EXPIRATION :</b></label>
+							    
+								 <input type="number" class="text_box" type="text" value="01" min="1" />	
+																
+								 <input type="number" class="text_box" type="text" value="2018" min="1" />	<br>
+								 
+								 <label id="cvv" for="cvv"><b>CVV: </b></label>
+								 <input id="cvvInput" type="number" placeholder="CVV"
+								name="email" onclick="valiadateCvvError()"> 
+								 <span id="debitcvvError"></span><br>
+																
+								<button id="creditCardButton" type="button"
+								onclick="validateDebitcardDetails()">PAY</button>
+							<br>
+							<br>
+				</div>
+			</div>
+			
+		
+</form>
+
+
+
+
+
+	
+	<div id="footer"></div>
+
+	<script>
+		$(function() {
+			$("#footer").load("footer_project.html");
+		});
+	</script>
+</body>
+</html>
