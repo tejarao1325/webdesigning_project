@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <title>Hello Hotel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/home_1.css">
+        <link rel="import" href="headerproject.html">
+        <link rel="import" href="testimonials.html">
+        <script type="text/javaScript" src="js/changebackground.js"></script>
+        <script type="text/javaScript" src="js/scrollButton.js"></script>
+        <script type="text/javaScript" src="js/seeMoreImages.js"></script>
+    </head>
+    
+    <body>
+        <!-- Calling headerproject.html using jQuery -->
+        <div id="header"></div>
+             <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function ()
+            {
+                $("#header").load("headerproject.html");
+            }
+            );
+        </script>
+
+     <!--main starts -->
+        <div id="main1">
+                <video poster="../projecthtml/images/back.jpeg" autoplay="true" loop="true" id="video">
+                    <source src="../projecthtml/images/hotel.mp4" type="video/mp4">
+                </video> 
+                <h3 id="goodService">Good Service is our Passion .</h3>
+                <h3 id="book">Book Your Stay !!</h3>
+                <h3 id="book1">+1 647-999-2222 Interested in booking a room ,<br> for your next trip ?
+                    Call Us Now </h3>
+                <button class="button b1">Special Offers</button>
+                <button class="button b2">30% Off - 7 Days</button>
+        </div>
+            <h3 id="rate">For Rates & Availability</h3>
+            <img src="../projecthtml/images/findaroomLogo.png" id="pic" width="300px" height="100px">
+            <h5 id="room">Simply fill required fields and then click on check availability button .</h5>
+            <h2 id="ci">Arrival</h2>
+            <input type="date"  id="checkin" placeholder=" DD-MM-YYYY">
+            <h2 id="co">Departure</h2>
+            <input type="date"  id="checkout" placeholder=" DD-MM-YYYY">
+            <label ><h2 id="room1">Room</h2></label>
+            <select name="room" id="room2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <label><h2  id="adult">Adults</h2></label>
+            <select name="Adult" id="adult1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <label><h2 id="children">Children</h2></label>
+            <select name="Children" id="children1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <button class="button b3" onclick="redirectToHotelsPage()">Check Availability</button>
+            <h3 id="best">Best place to enjoy your life</h3>
+            
+            <!-- all the room images coming because of JavaScript -->
+            <div>
+                <ul  id="jimage">
+                    <script>displayAllImages();</script>
+                </ul>
+            </div>
+            <h3 id="seemore">See more of our rooms.</h3>
+            <div>
+                <!-- image slider using JavaScript -->
+                <img src="../projecthtml/images/seemoreimage1.jpeg" name="slideshow"  id="slideshow" width=1000 height="500"></td>
+            </div>
+            
+            <!-- this section uses the concept of parallax -->
+            <div class="pimg1">
+                <h3 id="hospitality">Our Hospitality</h3>
+                <div id="bestrates"><span style="color:blue">Best Rates</span><br><br>
+                    We offer reasonable rates, with great choices.<br>Enjoy your stay with us.
+                </div>
+                <div id="fantasticoffers"><span style="color:blue">Fantastic Offers</span><br><br>
+                    We offer great discounts on rooms and suites in various seasons.
+                </div>
+                <div id="greatview"><span style="color:blue">Great View</span><br><br>
+                    Our hotel situated in a beautiful location and you can enjoy great view of the city.
+                </div>
+                <div id="greatfood"><span style="color:blue">Great Food</span><br><br>
+                    Our chefs are one of the best in the city and we offer great variety of food to our guests.
+                </div>
+                <div id="events"><span style="color:blue">Enjoy Events</span><br><br>
+                    Our hotel keep on organizing various ,so that our guests can have a good time.
+                </div>
+                <div id="crew"><span style="color:blue">Caring Staff</span><br><br>
+                    Our staff serves the guests in the best possible way.Enjoy our great services.
+                </div>
+            </div> <!-- parallax effect -->
+            <h2 id="activity">Our all Activities & Services</h2>
+            <img src="../projecthtml/images/laptop.png" alt="reception" id="laptop">
+            <h2 id="reception"><span style="color:blue">Reception 24/7</span><br><br>
+                Any time,day or night.<br>
+                Room service,housekeeping,<br> 
+                or maintenance request, <br>
+                our guests get what they need<br> fast.<br> 
+            </h2>
+            <div id="line1"></div>
+            <img src="../projecthtml/images/wifi.png" alt="wifi" id="imgwifi">
+
+            <h2 id="wifi"><span style="color:blue">Free Wi-Fi</span><br><br>
+                Hello Hotel provides <br>
+                complimentary wi-fi within the<br>
+                Lobby of the hotel,<br>
+                and within all the guestrooms. <br>
+            </h2>
+            <div id="line2"></div>
+            <img src="../projecthtml/images/mug.png" alt="mug" id="mug">
+
+            <h2 id="bar"><span style="color:blue">Bar</span><br><br>
+                There is a full range of<br>
+                bar drinks including a wide<br>
+                selection of spirits,Whisky,<br>
+                soft drinks and beer<br>
+            </h2>
+            <hr id="hr">
+            <img src="../projecthtml/images/campfire.jpg" alt="camp" id="imgcampfire">
+
+            <h2 id="campfire"><span style="color:blue">Campfire</span><br><br>
+                Gather around the fire,<br>
+                and share stories.<br> 
+                Enjoy our events under the<br> moonlight.<br>
+            </h2>
+            <img src="../projecthtml/images/boat.png" alt="boat" id="imgboat">
+
+            <h2 id="boattrip"><span style="color:blue">Boat Trip</span><br><br>
+                Sit back and relax with a <br>
+                glass of wine as we cruise<br> the ocean enjoying the <br>fresh air and the beautiful <br>Sunset.<br>
+            </h2>
+            <img src="../projecthtml/images/roomser.png" alt="roomservice" id="imgroom">
+
+            <h2 id="roomservice"><span style="color:blue">Room Service</span><br><br>
+                Serve guests in a fast and <br>
+                flawless manner maintaining service<br>
+                requests in under 30 minutes<br>
+                to ensure customer satisfaction <br>
+                levels.<br>
+            </h2>
+         <!--main ends -->
+        
+        <br><br><br><br><br><br>
+        
+        <!-- Calling footer.html using jQuery -->
+        
+        <div id="footer"></div>
+
+        <script>
+            $(function ()
+            {
+                $("#footer").load("footer_project.html");
+            }
+        </script>
+        
+        <!-- JavaScript button to go top of the page -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Go Up</button>
+
+    </body>
+</html>
