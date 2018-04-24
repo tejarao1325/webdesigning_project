@@ -18,6 +18,12 @@ header {
    padding: 1em 0;
    background-color: #FFF;
 }
+footer {
+   width: 100%;
+   padding: 1em 0;
+   background-color: #F8F8F8;
+   font-size: 0.8em;
+}
 nav {
    width: 100%;
    padding: 1em 0;
@@ -32,6 +38,9 @@ nav li {
    width: 85%;
    height: 100%;
 }
+/*** *** *** *** *** *** *** *** *** *** *** *** *** *** ***/
+/* NAVIGATION PAGE */
+/*** *** *** *** *** *** *** *** *** *** *** *** *** *** ***/
 .navigation-content div {
    width: 750px;
    margin: 0 auto;
@@ -51,7 +60,9 @@ nav li {
    font-size: 0.75em;
    color: #E34E40;
 }
-
+/*** *** *** *** *** *** *** *** *** *** *** *** *** *** ***/
+/* REVIEW PAGE */
+/*** *** *** *** *** *** *** *** *** *** *** *** *** *** ***/
 fieldset#form-review {
    margin: 25px 0;
    border: none;
@@ -72,11 +83,13 @@ fieldset#form-review>legend {
    color: #FFF;
    font-size: 1.25em;
 }
-footer {
-   width: 100%;
-   padding: 1em 0;
-   background-color: #F8F8F8;
-   font-size: 0.8em;
+.form-review-view {
+   padding: 5px 20px;
+   border-radius: 10px;
+}
+.form-review-view:nth-child(odd) {
+   background-color: #FFF;
+   box-shadow: 0 0 5px 2.5px #EEE;
 }
 /*** *** *** *** *** *** *** *** *** *** *** *** *** *** ***/
 /* AMENETIES PAGE */
