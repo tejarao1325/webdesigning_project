@@ -1,11 +1,11 @@
 var myImagesArray = 
-        ["hotelroom1.jpg",
-         "hotelroom2.jpg",
-         "hotelroom3.jpg",
-         "hotelroom4.jpg",
-         "hotelroom5.jpg",
-         "hotelroom6.jpg",
-         "hotelroom7.jpg"];
+        ["../projecthtml/images/hotelroom1.jpg",
+         "../projecthtml/images/hotelroom2.jpg",
+         "../projecthtml/images/hotelroom3.jpg",
+         "../projecthtml/images/hotelroom4.jpg",
+         "../projecthtml/images/hotelroom5.jpg",
+         "../projecthtml/images/hotelroom6.jpg",
+         "../projecthtml/images/hotelroom7.jpg"];
 
 
 //Build the slide of images
