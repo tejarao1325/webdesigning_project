@@ -2,8 +2,10 @@ html
 {
     font-family: 'Philosopher', sans-serif;
     max-width: 100%;
+    
+    /*The overflow-x property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element,
+    when it overflows at the left and right edges.*/
     overflow-x: hidden;
-
     background: snow ;
 }
 #black
@@ -38,7 +40,7 @@ html
 }
 #dialer
 {
- margin-left: 425px;
+    margin-left: 425px;
     margin-top: -54px;
 }
 #callus
@@ -46,7 +48,6 @@ html
     margin-top: -53px;
     margin-left: 450px;
     font-size: 15px; 
-    
 }
 #blackmail
 {
@@ -58,7 +59,6 @@ html
     margin-top: -52px;
     margin-left: 710px;
     font-size: 15px; 
-    
 }
 #logsign
 {
@@ -82,7 +82,6 @@ html
     border-radius: 3px;
     opacity: 0.6;
     transition: 0.3s;
-
 }
 #loginbtn:hover
 {
@@ -91,7 +90,6 @@ html
 #register
 {
     margin-left: 15px;
-    
 }
 #regbtn
 {
@@ -102,7 +100,6 @@ html
     border-radius: 3px;
     opacity: 0.6;
     transition: 0.3s;
-
 }
 #regbtn:hover
 {
@@ -110,13 +107,12 @@ html
 }
 #nav,#nav ul 
 {
-    list-style: none outside none;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 #nav 
 {
- 
     color: #2b2b2b;
     font-size: 13px;
     height: 36px;
@@ -132,11 +128,11 @@ html
     /*box shadow*/
     -moz-box-shadow: 0px 3px 3px #cecece;
     -webkit-box-shadow: 0px 3px 3px #cecece;
-    box-shadow: 0 3px 4px #8b8b8b;
+     box-shadow: 0 3px 4px #8b8b8b;
 
-    /*gradient*/
+    /*gradient
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #787878), 
-    color-stop(0.5, #5E5E5E), color-stop(0.51, #707070), color-stop(1, #838383));
+    color-stop(0.5, #5E5E5E), color-stop(0.51, #707070), color-stop(1, #838383));*/
     background-color: #9AF0FF;
 }
 #nav li
@@ -151,16 +147,19 @@ html
     position: relative;
     width: 110px;
 }
+/*
 #nav > li:first-child 
 {
     border-left: 0 none;
     margin-left: 5px;
-}
+}*/
 #nav ul 
 {
-    left: -9999px;
     position: absolute;
-    top: -9999px;
+    /*
+    When elements overlap, z-order determines which one covers the other. 
+    An element with a larger z-index generally covers an element with a lower one.
+    */
     z-index: 2;
 }
 #nav ul li 
@@ -178,11 +177,11 @@ html
     text-align: center;
     text-decoration: none;
 
-    /* gradient */
+    /* gradient 
     background-image: -webkit-gradient(linear, left bottom, left top, 
     color-stop(0, #787878), color-stop(0.5, #5E5E5E), color-stop(0.51, #707070), color-stop(1, #838383));
     background-image: -moz-linear-gradient(center bottom, #787878 0%, #5E5E5E 50%, #707070 51%, #838383 100%);
-    background-color: #5f5f5f;
+    */background-color: #5f5f5f;
 }
 
 #nav li:hover ul 
@@ -200,20 +199,19 @@ html
 }
 #goodService 
 {
-  font-family: 'Philosopher', sans-serif;
-  color: black;
-  margin-left: 20px;
-  font-size: 25px;
-  margin-top: -380px;
+    font-family: 'Philosopher', sans-serif;
+    color: black;
+    margin-left: 20px;
+    font-size: 25px;
+    margin-top: -380px;
 }
 #book, #book1
 {
-    
-  font-size: 25px;
+    font-size: 25px;
     font-family: 'Philosopher', sans-serif;
-  color: black;
-  margin-left: 20px;
-  margin-top: 40px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 40px;
 }   
 .button 
 {
@@ -230,7 +228,6 @@ html
     transition-duration: 0.4s;
     cursor: pointer;
 }
-
 .b1 
 {
     font-family: 'Philosopher', sans-serif;
@@ -240,7 +237,6 @@ html
     margin-left: 20px;
     margin-top:50px;
 }
-
 .b1:hover 
 {
     background-color: #4CAF50;
@@ -248,7 +244,6 @@ html
 }
 .b2
 {
-    
     font-family: 'Philosopher', sans-serif;
     background-color: white; 
     color: black; 
@@ -257,7 +252,6 @@ html
     margin-top: -62px;
     margin-right: 40px;
 }
-
 .b2:hover
 {
     background-color: #008CBA;
@@ -265,12 +259,11 @@ html
 }
 #rate
 {
-     font-family: 'Philosopher', sans-serif;
-   
-  font-size: 25px;
-      color: black;
-      margin-left: 300px;
-      margin-top:52px;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 25px;
+    color: black;
+    margin-left: 300px;
+    margin-top:52px;
 }
 #pic
 {
@@ -279,17 +272,15 @@ html
 }
 #room
 {
-    
-     font-family: 'Philosopher', sans-serif;
-   
-      color: black;
-      font-size: 25px;
-      margin-left: 200px;
+    font-family: 'Philosopher', sans-serif;
+    color: black;
+    font-size: 25px;
+    margin-left: 200px;
 }
 #ci
 {
     font-family: 'Philosopher', sans-serif;
-     margin-left: 50px;
+    margin-left: 50px;
 }
 #checkin
 {
@@ -299,8 +290,8 @@ html
     border-radius: 5px;
 }
 #co
-{font-family: 'Philosopher', sans-serif;
-    
+{  
+    font-family: 'Philosopher', sans-serif;
     margin-left: 255px;
     margin-top: -88px;
 }
@@ -310,68 +301,53 @@ html
     height: 40px;
     width: 180px;
     border-radius: 5px;
-
     margin-left: 211px;
     margin-top: 0px;
 }
 #room1
 {
     font-family: 'Philosopher', sans-serif;
-    
     margin-left: 440px;
     margin-top: -85px;
 }
 #adult
 {
- font-family: 'Philosopher', sans-serif;
-    
+    font-family: 'Philosopher', sans-serif;
     margin-left: 564px;
     margin-top: -85px;
-   
 }
 #adult1
 {
-    
-
     border: 1px solid black;
     height: 40px;
     width: 50px;
     border-radius: 5px;
-
     margin-left: 573px;
     margin-top: -2px;
-    
 }
 #children
 {
-font-family: 'Philosopher', sans-serif;
-    
+    font-family: 'Philosopher', sans-serif;
     margin-left: 692px;
     margin-top: -84px;
-     
 }
 #children1
 {
-    
-
     border: 1px solid black;
     height: 40px;
     width: 50px;
     border-radius: 5px;
-
     margin-left: 713px;
     margin-top: -4px;
-    
 }
 #room2
 {
     margin-left: 440px;
     margin-top: -3px;
-     border: 1px solid black;
+    border: 1px solid black;
     height: 40px;
     width: 50px;
     border-radius: 5px;
-
 }
 .b3
 {
@@ -381,7 +357,6 @@ font-family: 'Philosopher', sans-serif;
     margin-top: -50px;
     margin-left: 1000px;
 }
-
 .b3:hover
 {
     background-color: cyan;
@@ -394,87 +369,72 @@ font-family: 'Philosopher', sans-serif;
 #best
 {
     font-size: 25px;
-      color: black;
-        
+    color: black;
     margin-left: 520px;
     margin-top: 50px;
     font-family: 'Philosopher', sans-serif;
-
 }
-.b4
+#seemore
 {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #008CBA;
-    margin-left: 590px;
-    margin-right: 40px;
-    margin-top: 30px;
-}
-
-.b4:hover
-{
-    background-color: #929292;
-    color: white;
-}
-.pimg1
-{
-  margin-top: 30px;  
-  position:relative;
-  opacity:0.70;
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
+    font-size: 25px;
+    color: black;
+    font-family: 'Philosopher', sans-serif;
+    margin-left: 500px;
+    margin-top: 710px;
 }
 
 .pimg1
 {
-  background-image:url(par.jpg);
-  min-height:100%;
+   margin-top: 30px;  
+   position:relative;
+   opacity:0.70;
+   background-position:center;
+   background-size:cover;
+   background-repeat:no-repeat;
+   background-attachment:fixed;
+}
+.pimg1
+{
+   background-image:url(par.jpg);
+   min-height:100%;
 }
 #hospitality
 {
-     font-size: 25px;
-      color: black;
-      
-    color: black;
-    margin-left: 550px;
+   font-size: 25px;
+   color: black;
+   color: black;
+   margin-left: 550px;
 }
 #bestrates
 {
-      font-family: 'Philosopher', sans-serif;
-  
-    text-align:center;
-    border-radius: 12px;
-    background:  black;
-    height: 200px;
-    width: 300px;
-    margin-left: 90px;
-    opacity: .7;
-    color:#FFFFFF;
-       font-size: 25px;
-  
+   font-family: 'Philosopher', sans-serif;
+   text-align:center;
+   border-radius: 12px;
+   background:  black;
+   height: 200px;
+   width: 300px;
+   margin-left: 90px;
+   opacity: .7;
+   color:#FFFFFF;
+   font-size: 25px;
 }
 #fantasticoffers
 {
-    font-family: 'Philosopher', sans-serif;
-  
-    text-align:center;
-    font-size: 25px;
-    border-radius: 12px;
-    background:  black;
-    height: 200px;
-    width: 300px;
-    margin-top:  -200px;
-    margin-left: 490px;
-    opacity: .7;
-    color:#FFFFFF;
+   font-family: 'Philosopher', sans-serif;
+   text-align:center;
+   font-size: 25px;
+   border-radius: 12px;
+   background:  black;
+   height: 200px;
+   width: 300px;
+   margin-top:  -200px;
+   margin-left: 490px;
+   opacity: .7;
+   color:#FFFFFF;
 }
-
 #greatview
 {
     font-family: 'Philosopher', sans-serif;
-  
     text-align:center;
     font-size: 25px;
     border-radius: 12px;
@@ -489,7 +449,6 @@ font-family: 'Philosopher', sans-serif;
 #greatfood
 {
     font-family: 'Philosopher', sans-serif;
-  
     text-align:center;
     font-size: 25px;
     border-radius: 12px;
@@ -504,7 +463,6 @@ font-family: 'Philosopher', sans-serif;
 #events
 {
     font-family: 'Philosopher', sans-serif;
-  
     text-align:center;
     font-size: 25px;
     border-radius: 12px;
@@ -516,11 +474,9 @@ font-family: 'Philosopher', sans-serif;
     opacity: .8;
     color:#FFFFFF;
 }
-
 #crew
 {
     font-family: 'Philosopher', sans-serif;
-  
     text-align:center;
     font-size: 25px;
     border-radius: 12px;
@@ -532,40 +488,34 @@ font-family: 'Philosopher', sans-serif;
     opacity: .8;
     color:#FFFFFF;
 }
-
-
-
 #roomssuites
 {
-font-family: 'Philosopher', sans-serif;
-       
-      color: #202020;
-      font-size: 30px;
-      margin-left: 420px;
+    font-family: 'Philosopher', sans-serif;
+    color: #202020;
+    font-size: 30px;
+    margin-left: 420px;
 }
 #r1
 {
-      color: #202020;
-      font-size: 20px;
+    color: #202020;
+    font-size: 20px;
     text-align: center;
     height: 55px;
     width: 300px;
     margin-left: 40px;
-    
     border-radius: 5px;
     background: greenyellow;
 }
 #im2
 {
-      margin-left: 470px;
-      margin-top: -1500px;
-    
+    margin-left: 470px;
+    margin-top: -1500px;
 }
 #r2
 {
-      color: #202020;
-      font-size: 20px;
-      margin-left: 470px;
+    color: #202020;
+    font-size: 20px;
+    margin-left: 470px;
     text-align: center;
     height: 55px;
     width: 300px;
@@ -574,15 +524,14 @@ font-family: 'Philosopher', sans-serif;
 }
 #im3
 {
-      margin-left: 950px;
-      margin-top: -2000px;
-    
+    margin-left: 950px;
+    margin-top: -2000px;    
 }
 #r3
 {
-      color: #202020;
-      font-size: 20px;
-      margin-left: 950px;
+    color: #202020;
+    font-size: 20px;
+    margin-left: 950px;
     text-align: center;
     height: 55px;
     width: 300px;
@@ -592,11 +541,10 @@ font-family: 'Philosopher', sans-serif;
 #activity
 {
     font-family: 'Philosopher', sans-serif;
-  
-      color: #202020;
-      font-size: 25px;
-      margin-left: 20px;
-      text-align: center;
+    color: #202020;
+    font-size: 25px;
+    margin-left: 20px;
+    text-align: center;
 }
 #laptop
 {
@@ -607,9 +555,7 @@ font-family: 'Philosopher', sans-serif;
 #reception
 {
     font-family: 'Philosopher', sans-serif;
-  
-      color: #202020;
-      
+    color: #202020;
     font-size: 20px;
     margin-left: 80px;
     margin-top: -60px;
@@ -625,16 +571,15 @@ font-family: 'Philosopher', sans-serif;
 #imgwifi
 {
     margin-left: 420px;
-    
     height: 50px;
     width: 50px;
     margin-top: -445px;
 }
 #wifi
-{font-family: 'Philosopher', sans-serif;
-  
-      color: #202020;
-      margin-top: -430px;
+{
+    font-family: 'Philosopher', sans-serif;
+    color: #202020;
+    margin-top: -430px;
     font-size: 20px;
     margin-left: 490px;
 }
@@ -651,15 +596,13 @@ font-family: 'Philosopher', sans-serif;
     height: 50px;
     width: 50px;
     margin-top: -440px;
-margin-left: 810px;
-    
+    margin-left: 810px;
 }
 #bar
 {
     font-family: 'Philosopher', sans-serif;
-  
-      color: #202020;
-      margin-top: -425px;
+    color: #202020;
+    margin-top: -425px;
     font-size: 20px;
     margin-left: 880px;
 }
@@ -678,9 +621,8 @@ margin-left: 810px;
 #campfire
 {
     font-family: 'Philosopher', sans-serif;
-  
-      color: #202020;
-      margin-top:-40px;
+    color: #202020;
+    margin-top:-40px;
     font-size: 20px;
     margin-left: 70px;
 }
@@ -700,19 +642,18 @@ margin-left: 810px;
 }
 #boattrip
 {
-      color: #202020;
-      margin-top: -155px;
+    color: #202020;
+    margin-top: -155px;
     font-size: 20px;
     margin-left: 480px;
 }
 #roomservice
 {
-      color: #202020;
-      margin-top: -170px;
+    color: #202020;
+    margin-top: -170px;
     font-size: 20px;
     margin-left: 880px;
 }
-
 #dq
 {
     margin-left: 780px;
@@ -727,7 +668,6 @@ margin-left: 810px;
 }
 #e1
 {
-    
     opacity: .7;
     width: 100%;
     height: 80px;
@@ -735,37 +675,37 @@ margin-left: 810px;
 #available
 {
      position: absolute;
-      color: white;
-      font-size: 30px;
-      margin-left: 500px;
-      margin-top: 3px;
+     color: white;
+     font-size: 30px;
+     margin-left: 500px;
+     margin-top: 3px;
 }
-#seven{
+#seven
+{
     margin-left: 620px;
     margin-top: -39px;
-     position: absolute;
-      color: white;
-      font-size: 30px;
-    
+    position: absolute;
+    color: white;
+    font-size: 30px;
 }
 #address
 {
-      color: white;
-      font-size: 20px;
- margin-left: 8px;
+    color: white;
+    font-size: 20px;
+    margin-left: 8px;
 }
 #address2
 {
-      color: white;
-      font-size: 20px;
- margin-left: 45px;
- margin-top: -25px;
+    color: white;
+    font-size: 20px;
+    margin-left: 45px;
+    margin-top: -25px;
 }
-#a1{
+#a1
+{
     height: 200px;
     width: 300px;
     margin-left: 20px;
-    
 }
 #mailmail
 {
@@ -789,23 +729,23 @@ margin-left: 810px;
     margin-left: -322px;
     margin-top: 1px;
 }
-#a2{
-    
+#a2
+{
     border-radius: 10px;
     height: 100px;
     width: 300px;
     margin-left: 350px;
     margin-top: -119px;
 }
-
-#call2{
-      color: white;
-      font-size: 20px;
- margin-left: -280px;
- margin-top: -20px;
+#call2
+{
+    color: white;
+    font-size: 20px;
+    margin-left: -280px;
+    margin-top: -20px;
 }
-#a3{
-    
+#a3
+{
     height: 150px;
     width: 250px;
     margin-left: 350px;
@@ -813,78 +753,73 @@ margin-left: 810px;
 }
 #tweet
 {
-        width: 40px;
-	height: 40px;
-        margin-left: 30px;
-        border: 2px solid white;
-	background: white;
-	border-radius: 10px;
-
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 10px;
 }
 #face
 {
-        width: 40px;
-	height: 40px;
-        margin-left: 30px;
-        border: 2px solid white;
-	background: white;
-	border-radius: 10px;
-
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 10px;
 }
 
 #in
 {
-        width: 40px;
-	height: 40px;
-        margin-left: 30px;
-        border: 2px solid white;
-	background: white;
-	border-radius: 10px;
-
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 10px;
 }
 #insta
 {
-        width: 41px;
-	height: 40px;
-        margin-left: 30px;
-        margin-top: 15px;
-        border: 2px solid white;
-	background: white;
-	border-radius: 10px;
-
+    width: 41px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 10px;
 }
 #wiki
 {
-        width: 41px;
-	height: 40px;
-        margin-left: 30px;
-        margin-top: 15px;
-        border: 2px solid white;
-	background: white;
-	border-radius: 10px;
-
+    width: 41px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 10px;
 }
 #googleplus
 {
-        width: 41px;
-	height: 40px;
-        margin-left: 30px;
-        margin-top: 15px;
-        border: 2px solid white;
-	background: white;
-	border-radius: 10px;
-
+    width: 41px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 10px;
 }
-
-#mail{
-      color: white;
-      font-size: 20px;
- margin-left: 31px;   
+#mail
+{
+    color: white;
+    font-size: 20px;
+    margin-left: 31px;   
 }
-#mail2{
-      color: white;
-      font-size: 20px;
- margin-left: 30px;   
+#mail2
+{
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;   
 }
 #a4
 {
@@ -893,7 +828,8 @@ margin-left: 810px;
     margin-left: 680px;
     margin-top: -171px;
 }
-#em{
+#em
+{
     margin-left: 30px;
     font-size: 15px;
     border-radius: 5px;
@@ -905,9 +841,9 @@ margin-left: 810px;
 }
 #social
 {
-      color: white;
-      font-size: 20px;
- margin-left: 30px; 
+    color: white;
+    font-size: 20px;
+    margin-left: 30px; 
 }
 #rlogo
 {
@@ -928,44 +864,40 @@ margin-left: 810px;
 #backgoundImage
 {
     height: 200px;
-   width: 300px;
+    width: 300px;
 }
 #jimage ul
 {
     list-style-type: none;
     padding-left:20px;
     margin-left:100px;
-    
-    
-    
 }
 #jimage li
-{  list-style-type: none;
+{
+    list-style-type: none;
     float: left;
     margin-left: 50px;
     margin-top: 10px;
 }
-
-
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #9AF0FF;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
+#myBtn 
+{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #9AF0FF;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
 }
-
-#myBtn:hover {
-  background-color: yellow;
+#myBtn:hover 
+{
+    background-color: yellow;
 }
 #customer
 {
@@ -981,7 +913,6 @@ margin-left: 810px;
     padding-left:20px;
     margin-left:140px;
     background: snow;
-    
 }
 #timage li
 { 
@@ -993,7 +924,6 @@ margin-left: 810px;
 }
 #description
 {
-    
     text-align: justify;
     font-family: 'Philosopher', sans-serif;
     font-size: 25px;
@@ -1036,7 +966,6 @@ margin-left: 810px;
 #kelly
 {
     font-family: 'Philosopher', sans-serif;
-    
     margin-left: 35px;
 }
 #block2
@@ -1075,7 +1004,6 @@ margin-left: 810px;
 #santi
 {
     font-family: 'Philosopher', sans-serif;
-    
     margin-left: 40px;
     margin-top: 40px;
 }
@@ -1241,4 +1169,215 @@ margin-left: 810px;
     height: 300px;
     width: 50%;
     margin-left: 400px;
+}
+#candaflag1
+{
+    height: 40px;
+    width: 80px;
+    margin-top: -50px;
+    margin-left: 450px;
+}
+#ripley
+{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+#grid 
+{
+    max-width:900px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; 
+    list-style:none;
+    margin-top: 40px;
+    background-color:black;
+}
+#grid li 
+{
+    display: inline-block;
+    width:20%;
+    vertical-align:middle;
+    box-sizing:border-box;
+}
+        
+/* The wrapper for each item */
+.grid-cell
+{
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.grid-img
+{
+    display:block;
+    width: 100%;
+    height: 150px;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#grid li:hover .grid-img
+{
+    transform:scale(1.5);
+}
+        
+/* If have the overlay layer */
+.grid-overlay
+{
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: lightblue;
+    opacity:0;
+    transition:all 0.6s;
+}
+#grid li:hover .grid-overlay
+{
+    opacity:0.8;
+}
+
+/* If have captions */
+.grid-text
+{
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Philosopher', sans-serif;
+    top:40%;
+    color:white;
+    opacity:0;
+    
+    /*  The translate() method moves an element from its current position */
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#grid li:hover .grid-text
+{
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width:8000px)
+{
+    #grid li 
+    {
+        width:25%;
+    }
+}
+#ripleydiv
+{
+    height: 120px;
+    width:1000px;
+    margin-left: 160px;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+#ripleydesc
+{
+    font-size: 20px;
+    font-family: 'Philosopher', sans-serif;
+    color: black;
+    opacity: .9;
+    margin-left: 20px;
+    text-align: justify;
+}
+#contact1
+{
+    font-size: 15px;
+    font-family: 'Philosopher', sans-serif;
+    opacity: .9;
+    margin-left: 20px;
+}
+#niagara
+{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+#candaflag2
+{
+    height: 40px;
+    width: 80px;
+    margin-top: -50px;
+    margin-left: 450px;
+}
+#niagaradiv
+{
+    height: 155px;
+    width:1000px;
+    margin-left: 160px;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+#niagaradesc
+{
+    font-size: 20px;
+    font-family: 'Philosopher', sans-serif;
+    color: black;
+    opacity: .9;
+    margin-left: 20px;
+    text-align: justify;
+}
+#contact2
+{
+    font-size: 15px;
+    font-family: 'Philosopher', sans-serif;
+    opacity: .9;
+    margin-left: 20px;
+}
+#cntower
+{
+    margin-top: 40px;
+    text-align: center;
+}
+#candaflag3
+{
+    height: 40px;
+    width: 80px;
+    margin-top: -50px;
+    margin-left: 450px;
+}
+#cndiv
+{
+    height: 155px;
+    width:1000px;
+    margin-left: 160px;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+#cndesc
+{
+    font-size: 20px;
+    font-family: 'Philosopher', sans-serif;
+    color: black;
+    opacity: .9;
+    margin-left: 20px;
+    text-align: justify;
+}
+#contact3
+{
+    font-size: 15px;
+    font-family: 'Philosopher', sans-serif;
+    opacity: .9;
+    margin-left: 20px;
+}
+#slideshow
+{
+    margin-left: 170px;
+    margin-top: 50px;
+    transition-delay: 5s;
 }
