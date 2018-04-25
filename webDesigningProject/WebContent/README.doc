@@ -1,6 +1,118 @@
 # webdesigning_project
 Hello Hotel Webdesigning project
 
+
+
+ SAITEJA THANDRA
+ 
+ Signup Page
+ validating all mandatory and non mandatory fields when onclick of that individual field and error will be displayed 
+ validating all fields of the signup page on click of submit button and error will be displayed.
+ on successfull signup, using javascript two cookies will be created with email and password
+ To validate the password for login page(phase 2) i have created cookie name as combination of email&password and value will be password
+ and another cookie with value and name as user provided email.
+  if the user is signing up with same email it will show an error that email is already in use and u cannot signup.
+ on successfull signup user will be redirected to home page.
+ on click of cancel button user will be redirected to login page.
+ 
+ FILES
+ HelloHotelSignupForm.htm;
+ signup.css
+ signup.js
+ 
+ BERNARDO
+ Review and Rating Page
+ Validating the email.
+ appending the rating on hover.
+ 
+ FILES
+ review.html
+ review.css
+ review.js
+ jquery.barrating.js
+ 
+
+ 
+ ABHISHEIK
+ HomePage
+ Header
+ Footer
+ LOGIN and REGISTER button
+ Hotel Logo
+ 
+ FILES
+ home_project.html
+ headerproject.html
+ footer_project.html
+ footercss.css
+ headercss.css
+ 
+ CHAITALI
+ Contact us page
+ 
+ Files
+ contact-us(2).html
+ contactus.css
+ 
+ 
+PHASE 2:
+
+SAITEJA THANDRA
+
+LOGIN PAGE
+
+*validating email and password
+*Validating email already registered with hello hotel
+*allows login only user enter exact password while he has given using registration.
+*On Login disabling login & Register page and enabling only Signout button and printing the name of the customer which he has 
+given while registering.
+*On click of signout button user will be logged out. will enable login and register buttons.
+
+
+Forgot Password Page.
+
+*allows to change the password for only registered emails.
+*password and confirm password should be same.
+*user will be able to login with using new password.
+
+
+FILES
+HelloHotelLoginForm.html
+HelloHotelForgotPassword.html
+login.js
+updatePassword.js
+login.css
+forgotpassword.css
+
+
+
+BERNARDO
+
+NAVIGATION PAGE
+
+*Integrated google maps
+
+FILES
+navigation.html
+content-loadup.js
+
+
+
+
+ABHISHEK
+
+HOME PAGE
+
+HOME page is completed
+*Images are displayed using javascript.
+
+
+FILES
+Changebackground.js
+home_project.html
+home_1.css
+
+
 PHASE 3:
 
 SAITEJA THANDRA
@@ -52,3 +164,33 @@ scrollbutton.js
 testimonalimageslider.js
 testimonalimages.js
 testimonal.html
+
+
+PHASE 4
+
+
+SAITEJA
+
+*Integrated all pages with our website
+*added comments in javascript
+*proper intendation of html code
+*made an overlay for payment confirmation in payment page
+
+
+
+ABHISHEK
+*image slider in homepage
+*nearby attraction page allignment
+*Scroll up button 
+*proper allignment of  homepage
+*Integrated all pages with our website
+
+BERNARDO
+*Integrated all pages with our website
+*made some fixes for existing pages
+
+
+CHAITALI
+*updated contact us page and integrated with same header and footer
+*created a hotel details page
+*created checkavailability page
