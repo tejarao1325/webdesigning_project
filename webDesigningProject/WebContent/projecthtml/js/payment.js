@@ -195,7 +195,7 @@ function validateDebitcardDetails(){
 		document.getElementById('debitcardError').style.display = 'none';
 		document.getElementById('debitcardNameError').style.display = 'none';
 		document.getElementById('debitcvvError').style.display = 'none';
-		var modal = document.getElementById('myModal');
+		var modal = document.getElementById('myModal1');
 		var debitCardForm =document.getElementById('debitCardForm');
 		debitCardForm.style.display="block";
 		modal.style.display = "block";
