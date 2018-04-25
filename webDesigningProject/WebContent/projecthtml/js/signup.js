@@ -19,17 +19,17 @@ function getCookie(value) {
 	return "";
 }
 
-
 /*
  * 
- * Function for validating form on cick of sumit and if all conditions are valid setting up cookie
- * for email ,password and active field
+ * Function for validating form on cick of submit and if all conditions are valid
+ * setting up cookie for email ,password and active field
  */
 
 function saveDetails() {
 
 	if (validateFirstName() && validateLastName() && validateEmail()
-			&& validatePassword() && validateConfirmPswd() && validatePhoneNumber()) {
+			&& validatePassword() && validateConfirmPswd()
+			&& validatePhoneNumber()) {
 
 		var d = new Date();
 
@@ -45,7 +45,7 @@ function saveDetails() {
 
 		document.cookie = emailValue + "=" + emailValue + ";" + expires;
 
-		document.cookie = "active" + "=" +"WELCOME "+ name + ";" + expires;
+		document.cookie = "active" + "=" + "WELCOME " + name + ";" + expires;
 
 		document.cookie = emailValue + pswValue + "=" + pswValue + ";"
 				+ expires;
@@ -61,7 +61,6 @@ function saveDetails() {
 	}
 }
 
-
 /*
  * 
  * Function for redirecting to home page on click of cancel button
@@ -71,7 +70,6 @@ function cancel() {
 			.replace("http://localhost:8080/webDesigningProject/projecthtml/home_project.html");
 
 }
-
 
 /*
  * 
@@ -95,7 +93,6 @@ function validateFirstName() {
 	}
 
 }
-
 
 /*
  * 
@@ -126,7 +123,6 @@ function validateLastName() {
 
 	}
 }
-
 
 /*
  * 
@@ -169,7 +165,6 @@ function validateEmail() {
 
 }
 
-
 /*
  * 
  * Function for validating password and email
@@ -193,7 +188,6 @@ function validatePassword() {
 
 	}
 }
-
 
 /*
  * 
@@ -222,45 +216,41 @@ function validateConfirmPswd() {
 	}
 }
 
-
-
 /*
  * 
  * Function for validating phonenumber and confirmpassword
  */
-function validatePhoneNumber(){
-	
+function validatePhoneNumber() {
+
 	var phoneNumberPattern = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
 
 	if (document.signupForm.phoneNumberInput.value != "") {
 		if (document.signupForm.phoneNumberInput.value
 				.match(phoneNumberPattern)) {
 			document.getElementById('phoneError').style.display = 'none';
-			
-			if(validateConfirmPswd()){
+
+			if (validateConfirmPswd()) {
 				return true;
 			}
 
-			
-		}else{
-			
+		} else {
+
 			document.getElementById('phoneError').style.display = 'block';
 			document.getElementById('phoneError').innerHTML = "Please enter only numbers";
 			validateConfirmPswd();
-			
-		}
-		}else{
-			if(validateConfirmPswd()){
-				return true;
-			}
-			
-		}
-}
 
+		}
+	} else {
+		if (validateConfirmPswd()) {
+			return true;
+		}
+
+	}
+}
 
 /*
  * 
- * Function for redirecting  to homepage  onclick of already a user button
+ * Function for redirecting to homepage onclick of already a user button
  */
 function redirectToLogin() {
 
@@ -269,7 +259,6 @@ function redirectToLogin() {
 
 }
 
-
 /*
  * 
  * Function for gmail api
@@ -277,8 +266,10 @@ function redirectToLogin() {
 
 function handleClientLoad() {
 	// Loads the client library and the auth2 library together for efficiency.
-	// Loading the auth2 library is optional here since `gapi.client.init` function will load
-	// it if not already loaded. Loading it upfront can save one network request.
+	// Loading the auth2 library is optional here since `gapi.client.init`
+	// function will load
+	// it if not already loaded. Loading it upfront can save one network
+	// request.
 	gapi.load('client:auth2', initClient);
 }
 
@@ -287,14 +278,15 @@ function handleClientLoad() {
  * Function for gmail api
  */
 
-
 function initClient() {
-	// Initialize the client with API key and People API, and initialize OAuth with an
-	// OAuth 2.0 client ID and scopes (space delimited string) to request access.
+	// Initialize the client with API key and People API, and initialize OAuth
+	// with an
+	// OAuth 2.0 client ID and scopes (space delimited string) to request
+	// access.
 	gapi.client
 			.init(
 					{
-						/*apiKey: 'YOUR_API_KEY',*/
+						/* apiKey: 'YOUR_API_KEY', */
 						discoveryDocs : [ "https://people.googleapis.com/$discovery/rest?version=v1" ],
 						clientId : '954523330166-hpps93s4bhav6s88icks749ocghsgj9g.apps.googleusercontent.com',
 						scope : 'profile'
@@ -313,13 +305,10 @@ function initClient() {
 					});
 }
 
-
-
 /*
  * 
  * Function for gmail api
  */
-
 
 function updateSigninStatus(isSignedIn) {
 	// When signin status changes, this function is called.
@@ -328,7 +317,7 @@ function updateSigninStatus(isSignedIn) {
 
 		makeApiCall();
 		redirecttoHomePageForGmailLogin();
-		/*listLabels();*/
+		/* listLabels(); */
 	}
 }
 
@@ -337,16 +326,26 @@ function updateSigninStatus(isSignedIn) {
  * Function for gmail api
  */
 
-
 function handleSignInClick(event) {
-	// Ideally the button should only show up after gapi.client.init finishes, so that this
+	// Ideally the button should only show up after gapi.client.init finishes,
+	// so that this
 	// handler won't be called before OAuth is initialized.
 	gapi.auth2.getAuthInstance().signIn();
 }
 
+/*
+ * 
+ * Function for gmail api
+ */
+
 function handleSignOutClick(event) {
 	gapi.auth2.getAuthInstance().signOut();
 }
+
+/*
+ * 
+ * Function for gmail api
+ */
 
 function makeApiCall() {
 	// Make an API call to the People API, and print the user's given name.
@@ -359,7 +358,6 @@ function makeApiCall() {
 		console.log('Error: ' + reason.result.error.message);
 	});
 }
-
 
 /*
  * 
@@ -377,7 +375,6 @@ window.fbAsyncInit = function() {
 	FB.AppEvents.logPageView();
 
 };
-
 
 /*
  * 
@@ -405,7 +402,6 @@ function checkLoginState() {
 	});
 }
 
-
 /*
  * 
  * Function for facebook api
@@ -421,11 +417,10 @@ function statusChangeCallback(response) {
 	});
 }
 
-
 /*
  * 
- * Function for redirecting to  home page for signed in user using gmail api
- * and setting the cookie as gmail
+ * Function for redirecting to home page for signed in user using gmail api and
+ * setting the cookie as gmail
  */
 
 function redirecttoHomePageForGmailLogin() {
@@ -438,6 +433,8 @@ function redirecttoHomePageForGmailLogin() {
 	d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
 
 	var expires = "expires=" + d.toUTCString();
+
+	document.cookie = "active" + "=" + "WELCOME USER" + ";" + expires;
 
 	document.cookie = "gmail" + "=" + "gmail" + ";" + expires;
 

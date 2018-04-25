@@ -109,7 +109,7 @@ function validateDetails() {
 
 						var expires = "expires=" + d.toUTCString();
 
-						document.cookie = "active" + "=" + name + ";" + expires;
+						document.cookie = "active" + "=" +"WELCOME "+ name + ";" + expires;
 
 						window.location
 						.replace("http://localhost:8080/webDesigningProject/projecthtml/home_project.html");
