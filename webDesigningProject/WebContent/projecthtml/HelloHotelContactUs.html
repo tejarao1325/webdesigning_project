@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<link rel="stylesheet" href="css/contactus.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/footercss.css">
+<link rel="stylesheet" href="css/headercss.css">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+   
+   <script>
+     $(document).ready(function() {
+        $("#tabs").tabs();
+     });
+  </script>
+</head>
+<body>
+<header>        
+       <div id="black">
+            <img src="../projecthtml/images/hhh.jpg" alt="hotel logo" id="hotelLogo">
+           <img src="../projecthtml/images/dialerblack.png" height="20px" width="20px" alt="dialer" id="dialer">
+            <h6 id="callus">Call Us : 444-555-6666 </h6>
+            <img src="../projecthtml/images/email.jpg" height="20px" width="20px" alt="mail" id="blackmail">
+            <h6 id="maile">Mail@hotel.com </h6>
+            <div id="logsign">
+                <img src="../projecthtml/images/login.png"   height="20px" width="20px" alt="login" id="login">
+                <input type="button" name="submit" id="loginbtn" value="Login" onclick="window.location='http://localhost:8080/webDesigningProject/projecthtml/HelloHotelLoginForm.html';"> 
+                
+                 
+                <img src="../projecthtml/images/register.jpg"   height="20px" width="20px" alt="login" id="register">
+                <input type="button" name="submit" id="regbtn" value="Register" onclick="window.location='http://localhost:8080/webDesigningProject/projecthtml/HelloHotelSignUpForm.html';"> 
+                
+            </div>
+            
+            <div id="signOut">
+            <img src="../projecthtml/images/register.jpg"   height="20px" width="20px" alt="login" id="signOutbtn" >
+            <input  id="signOutbtn" type="button" name="submit"  value="SignOut" onclick="signOut()" > 
+           
+        </div>
+        
+         <h3 id="username"></h3>
+        </div>
+        <div>
+            <ul  id="nav">
+                <li><a href="Home">Home</a></li>
+                <li>  <a href="Rooms">Rooms</a>
+                    <ul>
+                        <li><a href='#'>Room 1</a></li>
+                        <li><a href='#'>Room 2</a></li>
+                        <li><a href='#'>Room 3</a></li>
+                        <li><a href='#'>Room 4</a></li>
+                    </ul>
+                </li>
+                    <li>  <a href="#">Dining</a>
+                    <ul>
+                        <li><a href='#'>Event 1</a></li>
+                        <li><a href='#'>Event 2</a></li>
+                        <li><a href='#'>Event 3</a></li>
+                        <li><a href='#'>Event 4</a></li>
+                    </ul>
+                </li>
+                <li>  <a href="#">Gallery</a>
+                    <ul>
+                        <li><a href='#'>Event 1</a></li>
+                        <li><a href='#'>Event 2</a></li>
+                        <li><a href='#'>Event 3</a></li>
+                        <li><a href='#'>Event 4</a></li>
+                    </ul>
+                </li>
+           
+                <li>  <a href="#">Blogs</a></li>
+           
+                <li> <a href="#">Testimonials</a></li>
+                <li> <a href="review.html">Reviews</a></li>
+                <li> <a href="#">Events</a></li>
+            </ul>
+        </div>
+        
+    </header>
+
+<div id="banner-fade">
+		 <img src="../projecthtml/images/contact-us-banner.jpg" width='1320' height='300'>
+</div>   
+<section id="contactsection">
+		<h1 id="contactus">Contact US regarding any hotel queries</h1>
+        <!-- Tabs HTML code. -->
+        <div id="tabs">
+            <ul class="contactlist">
+                <li><a href="#tabs-1">Customer Support</a></li>
+                <li><a href="#tabs-2">Reservation FAQS</a></li>
+                <li><a href="#tabs-3">Write To Us</a></li>
+                <li><a href="#tabs-4">Our Offices</a></li>
+                <li><a href="#tabs-5">Office Address</a></li>
+                
+            </ul>
+            <div id="tabs-1">
+                <p class="para"> Call us on +1(444)-555-6666
+                <p class="para">Contact Us :
+
+				<p class="para">Send us your email comments or questions about our hotels, or our Web site. Security and privacy are important issues to our Family of Brands. For your own privacy protection, we encourage you not to include sensitive personal information in any emails you may send to us. Please do not send credit card numbers or any sensitive personal information to us via email.</p>
+                </div>
+            <div id="tabs-2">
+                <p class="para">Reservation FAQS</p>
+          <ul class="conntactlist">
+          						<li> My travel plans have changed, can I modify my reservation on-line?</li>
+								<li>Can I cancel a reservation on-line?</li>
+								<li>Where do I find the cancellation policy?</li>
+								<li>What is a Promotion Code?</li>
+								<li>Can I use Points to upgrade an existing reservation?</li>
+								<li>Why does it say my Hilton Honors account is invalid?</li>
+								<li>What is bed unspec or Bed type not specified?</li>
+								<li>What is the Corporate rate, no ID required?</li>
+              </ul>
+          </div>
+            <div id="tabs-3">
+                <p class="para">Send us your inquiries on given email address as well as you can directly contact us via contact number</p>
+				<p class="para">Enail US : hellohotel@gmail.com 
+            </div>
+             <div id="tabs-4">
+                <p class="para">Our Offices</p>
+          <ul class="conntactlist">
+          						<li> Canada : +1(444)-555-6666</li>
+								<li>India: +91(121)-991-3132</li>
+								<li>Dubai:+11121-667-4528</li>
+								<li>UAE:+1(444)-555-6666</li>
+								<li>Australia:+1(444)-555-6666</li>
+								<li>US:+1(444)-555-6666</li>
+								<li>Switzerland:+1(444)-555-6666</li>
+								<li>London (UK):+1(444)-555-6666</li>
+              </ul>
+          </div>
+             <div id="tabs-5">
+                <p class="para"> Office Address
+                <p class="para">121 , Victoria Park </p>
+                <p class="para">British Columbia , 121 M99 ,CANADA </p>
+                </div>
+        </div>
+        <!-- End Tabs HTML code. -->
+    </section>
+<br><br>
+
+<footer style="float:left; width:100%;">
+	    <div id="foot">
+	        <div id="e1"><h2 id="available">We are available for you<br></h2></div>
+	        <h2 id="seven">24/7</h2>
+	        <div id="a1"> <h2 id="address">Contact :</h2>
+	            <img src="../projecthtml/images/ee.png" height="25px" width="25px" id="email1">
+	            <h2 id="mailmail">Mail@hotel.com</h2>
+
+	            <img src="../projecthtml/images/b.jpg" height="25px" width="25px" id="navinavi">
+	            <h2 id="address2"><address>100 Front St W<br> Toronto , ON M5J 1E3</address></h2></div>
+
+	        <div id="a2"> <img src="../projecthtml/images/dialerblack.png" height="25px" width="25px" id="dial">
+	            <h2 id="call2">444-555-6666</h2></div>  
+
+	        <div id="a3"> <h2 id="mail">Connect :</h2>
+
+	            <img src="../projecthtml/images/tweet2.png" height="20px" width="20px" id="tweet">
+
+	            <img src="../projecthtml/images/face2.jpg" height="20px" width="20px" id="face">
+
+	            <img src="../projecthtml/images/yy.png" height="45px" width="45px" id="in">
+	            
+	            <img src="../projecthtml/images/insta.jpg" height="20px" width="20px" id="insta">
+	            
+	            <img src="../projecthtml/images/wiki.png"  id="wiki">
+	            
+	            <img src="../projecthtml/images/googleplus.png"  id="googleplus">
+	                   
+	        </div>
+
+	        <div id="a4"> <h2 id="social">Newsletter :</h2>
+	            <input type="email" name="EMAIL" placeholder="  YOUR EMAIL ADDRESS" id="em" style="height:28px;width:200px;">
+	            <button type="submit" id="b22">&#10095;</button>
+	        </div>
+	        <img src="../projecthtml/images/hhh.jpg" id="rlogo">
+	    </div>
+	</footer>
+	<h3 style="float:left; width:100%;">Copyright &COPY; 2018</h3>
+</body>
+
+</html>

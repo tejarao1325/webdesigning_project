@@ -25,6 +25,7 @@ window.onload = function () {
 
    document.querySelector('#btn-review-submit').onclick = validadeName;
    document.querySelector('#btn-review-submit').onclick = validadeEmail;
+   document.querySelector('#btn-review-submit').onclick = displayReviews;
 }
 
 function validadeName() {
@@ -60,7 +61,29 @@ function validadeEmail() {
       return nameValid = true;
    }
 }
+   var showReviews = ""
+function displayReviews() {
+      showReviews += "<div class=\"form-review-view\"><p>Name: " + document.querySelector('#form-review-name').value +"</p>" +
+                     "<p class=\"no-margin-top no-margin-bottom\">Location: " + document.querySelector('#form-review-location').value +"</p>" +
+                     "<p class=\"no-margin-top no-margin-bottom\">Cleanliness: " + document.querySelector('#form-review-clean').value +"</p>" +
+                     "<p class=\"no-margin-top no-margin-bottom\">Value: " + document.querySelector('#form-review-value').value +"</p>" +
+                     "<p class=\"no-margin-top no-margin-bottom\">Check-in: " + document.querySelector('#form-review-checkin').value +"</p>" +
+                     "<p class=\"no-margin-top no-margin-bottom\">Ameneties: " + document.querySelector('#form-review-ameneties').value +"</p>" +
+                     "<p class=\"no-margin-top no-margin-bottom\">Wi-Fi: " + document.querySelector('#form-review-wifi').value +"</p>" +
+                     "<p class=\"no-margin-top\">Comments: <br>" + document.querySelector('#form-review-comments').value +"</p></div>";
+   document.querySelector('#form-review-display').innerHTML = showReviews;
+}
 // AMENETIES
 $(document).ready(function() {
-     $("#tabs").tabs();
+   $("#tabs").tabs();
+
+   $("#accordion").accordion({
+      event: "click",
+      heightStyle: "content",
+      collapsible: true
+   });
+});
+
+$(document).ready(function() {
+   console.log( "After accordion!" );
 });
