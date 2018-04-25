@@ -45,7 +45,7 @@ function saveDetails() {
 
 		document.cookie = emailValue + "=" + emailValue + ";" + expires;
 
-		document.cookie = "active" + "=" + name + ";" + expires;
+		document.cookie = "active" + "=" +"WELCOME "+ name + ";" + expires;
 
 		document.cookie = emailValue + pswValue + "=" + pswValue + ";"
 				+ expires;
