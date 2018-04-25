@@ -154,6 +154,11 @@ function validatecardDetails(){
 		document.getElementById('cardError').style.display = 'none';
 		document.getElementById('cardNameError').style.display = 'none';
 		document.getElementById('cvvError').style.display = 'none';
+		
+		var modal = document.getElementById('myModal');
+		var creditCardForm =document.getElementById('creditCardForm');
+		creditCardForm.style.display="block";
+		modal.style.display = "block";
 	}
 }
 
@@ -162,25 +167,25 @@ function validateDebitcardDetails(){
 	
 	
 	
-	if (document.forms.creditCardForm.numberInput.value == ""
-		&& document.forms.creditCardForm.nameInput.value == "" && document.forms.creditCardForm.cvvInput.value == "" ) {
+	if (document.forms.debitCardForm.numberInput.value == ""
+		&& document.forms.debitCardForm.nameInput.value == "" && document.forms.debitCardForm.cvvInput.value == "" ) {
 		document.getElementById('debitcardError').style.display = 'block';
 		document.getElementById('debitcardNameError').style.display = 'block';
 		document.getElementById('debitcvvError').style.display = 'block';
 		document.getElementById('debitcardError').innerHTML = "Please enter Card Number";
 		document.getElementById('debitcardNameError').innerHTML = "Password enter card name";
 		document.getElementById('debitcvvError').innerHTML = "Please enter CVV";
-	}else if(document.forms.creditCardForm.numberInput.value == ""){
+	}else if(document.forms.debitCardForm.numberInput.value == ""){
 		document.getElementById('debitcardError').style.display = 'block';
 		document.getElementById('debitcardError').innerHTML = "Please enter Card Number";
 		
-	}else if(document.forms.creditCardForm.nameInput.value == ""){
+	}else if(document.forms.debitCardForm.nameInput.value == ""){
 		document.getElementById('debitcardNameError').style.display = 'block';
 		document.getElementById('debitcardError').style.display = 'none';
 		
 		document.getElementById('debitcardNameError').innerHTML = "Password enter card name";
 		
-	}else if(document.forms.creditCardForm.cvvInput.value == ""){
+	}else if(document.forms.debitCardForm.cvvInput.value == ""){
 		document.getElementById('debitcvvError').style.display = 'block';
 		document.getElementById('debitcvvError').innerHTML = "Please enter CVV";
 		document.getElementById('debitcardError').style.display = 'none';
@@ -190,9 +195,17 @@ function validateDebitcardDetails(){
 		document.getElementById('debitcardError').style.display = 'none';
 		document.getElementById('debitcardNameError').style.display = 'none';
 		document.getElementById('debitcvvError').style.display = 'none';
+		var modal = document.getElementById('myModal');
+		var debitCardForm =document.getElementById('debitCardForm');
+		debitCardForm.style.display="block";
+		modal.style.display = "block";
 	}
 	
 }
 
 
 
+function continueBooking(){
+	window.location
+	.replace("http://localhost:8080/webDesigningProject/projecthtml/home_project.html");
+}
